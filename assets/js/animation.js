@@ -76,7 +76,7 @@
 
 	function showPage() {
 		svgs.forEach( function( el, i ) {
-			el.setAttribute( 'class', el.getAttribute('class') + ' hide' );
+			//el.setAttribute( 'class', el.getAttribute('class') + ' hide' );
 		} );
 		hidden.forEach( function( el, i ) {
 			classie.remove( el, 'hide' );
