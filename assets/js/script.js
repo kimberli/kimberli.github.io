@@ -1,5 +1,3 @@
-$('#container').css('opacity', 0);
-
 function adjust() {
 	if( $(this).width() <= 1024 ) {
         $('#content').remove().insertAfter($('#visual'));
@@ -14,7 +12,10 @@ function adjust() {
 }
 
 adjust();
-$('#container').css('opacity', 1);
+
+$(window).load(function() {
+	$('#container').css('opacity', 1);
+});
 
 $(window).resize(function() {
     adjust();
