@@ -13,10 +13,11 @@ function adjust() {
  	var divH = $('#content-box').innerHeight()/2;
 	var pageH = $('#content').innerHeight()/2;
 	$('#content-box').css({top: Math.round(pageH-divH)});
+	
+	$(document.body).show();
 }
 
 adjust();
-$(document.body).show();
 
 $(window).resize(function() {
     adjust();
