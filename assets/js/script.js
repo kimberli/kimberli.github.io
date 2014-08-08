@@ -1,7 +1,4 @@
 $('#container').css('opacity', 0);
-$(window).load(function() {
-  $('#container').css('opacity', 1);
-});
 
 function adjust() {
 	if( $(this).width() <= 1024 ) {
@@ -17,6 +14,7 @@ function adjust() {
 }
 
 adjust();
+$('#container').css('opacity', 1);
 
 $(window).resize(function() {
     adjust();
