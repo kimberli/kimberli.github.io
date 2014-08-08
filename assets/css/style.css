@@ -169,7 +169,7 @@ path {
 	}
 	.content-info {
 		display: inline-block;
-		margin: 0 10%;
+		margin: 0;
 		vertical-align: middle;
 	}
 	.image-pic {
