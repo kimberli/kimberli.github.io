@@ -137,14 +137,14 @@ path {
 
 .sm-pic-box {
 	position: relative;
-	width: 60px;
-	height: 60px;
+	width: 65px;
+	height: 65px;
 	display: inline-block;
 }
 
 .sm-pic {
 	position: absolute;
-	left: 3px;
+	left: 6px;
 	top: 5px;
 }
 
