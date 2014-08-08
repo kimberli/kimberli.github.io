@@ -183,6 +183,12 @@ path {
 	}
 }
 @media only screen and (max-width: 400px) {
+	#visual {
+		height: 40%;
+	}
+	#content {
+		height: 60%;
+	}
 	#name {
 		margin-top: 10px;
 		font-size: 26px;
