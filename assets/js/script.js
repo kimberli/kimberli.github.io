@@ -1,3 +1,7 @@
+$(document).ready(function() {
+	$(document.body).hide();
+});
+
 function adjust() {
 	if( $(this).width() <= 1024 ) {
         $('#content').remove().insertAfter($('#visual'));
@@ -12,14 +16,8 @@ function adjust() {
 }
 
 adjust();
+$(document.body).show();
 
 $(window).resize(function() {
     adjust();
-});
-
-$(document).ready(function() {
-	$(document.body).hide();
-});
-$(window).load(function() {
-	$(document.body).show();
 });
