@@ -1,4 +1,4 @@
-/* Adjusts main box order, SVG border line path, SVG circle sizes */
+// Adjusts main box order, SVG border line path, SVG circle sizes
 function adjust() {
 	if( $(this).width() <= 1024 ) {
         $('#content').remove().insertAfter($('#visual'));
@@ -29,10 +29,10 @@ function adjust() {
 	}
 }
 
-/* Run adjust() for the first time */
+// Run adjust() for the first time 
 adjust();
 
-/* Show window when it loads and run slider */
+// Show window when it loads and run slider
 $(window).load(function() {
 	$('#loader').css('background', 'none');
 	$('#container').css('opacity', 1);
@@ -42,7 +42,35 @@ $(window).load(function() {
     });
 });
 
-/* Adjust container sizes and lines on window resize */
-$(window).resize(function() {
-    adjust();
+// debouncing function from John Hann
+// http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/
+(function($,sr){
+  var debounce = function (func, threshold, execAsap) {
+      var timeout;
+
+      return function debounced () {
+          var obj = this, args = arguments;
+          function delayed () {
+              if (!execAsap)
+                  func.apply(obj, args);
+              timeout = null;
+          };
+
+          if (timeout)
+              clearTimeout(timeout);
+          else if (execAsap)
+              func.apply(obj, args);
+
+          timeout = setTimeout(delayed, threshold || 100);
+      };
+  }
+  // smartresize 
+  jQuery.fn[sr] = function(fn){  return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr); };
+
+})(jQuery,'smartresize');
+
+
+// Adjust on smart resize:
+$(window).smartresize(function(){
+	adjust();
 });
