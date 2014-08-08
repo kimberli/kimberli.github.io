@@ -42,6 +42,7 @@
 	
 	var svgs = Array.prototype.slice.call( document.querySelectorAll( 'svg' ) ),
 		hidden = Array.prototype.slice.call( document.querySelectorAll( '.hide' ) ),
+		hidden_box = Array.prototype.slice.call( document.querySelectorAll( '.hide-bg' ) ),
 		current_frame = 0,
 		total_frames = 60,
 		path = new Array(),
@@ -79,6 +80,10 @@
 		} );
 		hidden.forEach( function( el, i ) {
 			classie.remove( el, 'hide' );
+			classie.add( el, 'show' );
+		} );
+		hidden_box.forEach( function( el, i ) {
+			classie.remove( el, 'hide-bg' );
 			classie.add( el, 'show' );
 		} );
 	}

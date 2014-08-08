@@ -74,12 +74,17 @@ path {
 
 .show {
 	opacity: 1;
-	transition: opacity 0.5s;
+	transition: opacity 0.5s, background 0.5s, box-shadow 0.5s;
 }
 
 .hide {
 	opacity: 0;
 	transition: opacity 0.5s;
+}
+
+.hide-bg {
+	background: none !important;
+	box-shadow: none !important;
 }
 
 .line-drawing {
