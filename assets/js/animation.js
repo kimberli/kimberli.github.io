@@ -89,6 +89,8 @@
 	}
 
 	init();
-	draw();
+	$(window).load(function() {
+		draw();
+	});
 
 })();

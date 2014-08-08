@@ -205,6 +205,18 @@ path {
 		top: -113px;
 		left: 1px;
 	}
+	.sm-svg {
+		width: 35px;
+		height: 35px;
+	}
+	.sm-pic-box {
+		width: 35px;
+		height: 35px;
+	}
+	.sm-pic {
+		width: 25px;
+		height: 25px;
+	}
 }
 @media only screen and (max-width: 500px) {
 	.content-info {
