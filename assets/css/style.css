@@ -152,6 +152,6 @@ path {
 
 @media only screen and (max-width: 728px) {
 	#content {
-		min-height: 400px;
+		/*min-height: 400px;*/
 	}
 }

@@ -18,8 +18,8 @@ $(window).resize(function() {
 });
 
 $(document).ready(function() {
-  $("body").hide();
+	$(document.body).hide();
 });
 $(window).load(function() {
-  $("body").show();
+	$(document.body).show();
 });
