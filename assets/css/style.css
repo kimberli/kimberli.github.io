@@ -118,7 +118,7 @@ a {
 /* ---- Preload images ---- */
 body:after{
     display:none;
-    content: url('../img/email_hover.svg') url('../img/linkedin_hover.svg') url('../img/github_hover.svg') url('../img/resume_hover.svg') url('../img/bg1.jpg') url('../img/bg2.jpg') url('../img/bg3.jpg');
+    content: url('../img/bg1.jpg') url('../img/bg2.jpg') url('../img/bg3.jpg') url('../img/email_hover.svg') url('../img/linkedin_hover.svg') url('../img/github_hover.svg') url('../img/resume_hover.svg') url('../img/bullet.svg') url('../img/bullet_active.svg') url('../img/arrow-right.svg') url('../img/arrow-left.svg');
 }
 
 /* ---- Slider ---- */
