@@ -29,6 +29,11 @@ function adjust() {
 	}
 }
 
+/* Run slider */
+$(document).ready(function() {
+    $('#slider').leanSlider();
+});
+
 /* Run adjust() for the first time */
 adjust();
 
