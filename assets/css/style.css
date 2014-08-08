@@ -3,14 +3,15 @@
 
 /* ---- Main Structure ---- */
 
-html, body { 
+html, 
+body,  
+#container { 
 	margin: 0; 
 	padding: 0; 
 	height: 100%; 
 	width: 100%; 
-	font-family: 'Arvo', sans-serif;
 }
-.container {
+.box {
 	margin: 0;
 	padding: 0;
 	height: 100%;
@@ -44,6 +45,7 @@ html, body {
 	font-size: 36px;
 	color: #fff9c8;
 	margin-top: 20px;
+	font-family: 'Arvo', sans-serif;
 }
 #interests {
 	font-family: 'Merriweather', sans-serif;
@@ -124,7 +126,7 @@ path {
 /* ---- Vertical Layout ---- */
 
 @media only screen and (max-width: 1024px) {
-	.container {
+	.box {
 		margin: 0;
 		vertical-align: none;
 	}
@@ -153,5 +155,8 @@ path {
 @media only screen and (max-width: 728px) {
 	#content {
 		/*min-height: 400px;*/
+	}
+	#name {
+		font-size: 30px;
 	}
 }

@@ -1,5 +1,6 @@
-$(document).ready(function() {
-	$(document.body).hide();
+$('#container').css('opacity', 0);
+$(window).load(function() {
+  $('#container').css('opacity', 1);
 });
 
 function adjust() {
@@ -10,11 +11,9 @@ function adjust() {
     	$('#visual').remove().insertAfter($('#content'));
     }
 
- 	var divH = $('#content-box').innerHeight()/2;
-	var pageH = $('#content').innerHeight()/2;
-	$('#content-box').css({top: Math.round(pageH-divH)});
-	
-	$(document.body).show();
+ 	var divHeight = $('#content-box').innerHeight()/2;
+	var boxHeight = $('#content').innerHeight()/2;
+	$('#content-box').css({top: Math.round(boxHeight-divHeight)});
 }
 
 adjust();
