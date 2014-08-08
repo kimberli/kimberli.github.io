@@ -15,8 +15,6 @@ body,
 	opacity: 0;
 	overflow: hidden;
 	background-image: url('../img/girl.png');
-	position: relative;
-	z-index: -1;
 	-webkit-touch-callout: none;
 	  -webkit-user-select: none;
 	   -khtml-user-select: none;
