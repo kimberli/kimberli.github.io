@@ -29,20 +29,16 @@ function adjust() {
 	}
 }
 
-/* Run slider */
-$(document).ready(function() {
-    $('#slider').leanSlider({
-    	directionNav: '#slider-direction-nav',
-    	controlNav: '#slider-control-nav'
-    });
-});
-
 /* Run adjust() for the first time */
 adjust();
 
-/* Show window when it loads */
+/* Show window when it loads and run slider */
 $(window).load(function() {
 	$('#container').css('opacity', 1);
+	$('#slider').leanSlider({
+    	directionNav: '#slider-direction-nav',
+    	controlNav: '#slider-control-nav'
+    });
 });
 
 /* Adjust container sizes and lines on window resize */
