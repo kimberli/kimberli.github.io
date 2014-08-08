@@ -1,0 +1,42 @@
+html, body { 
+	margin:0; 
+	padding:0; 
+	height:100%; 
+	width:100%; 
+}
+.container {
+	margin: 0 -4px 0 0;
+	padding: 0;
+	height: 100%;
+	vertical-align: top;
+}
+#visual {
+	width: 75%;
+	background: #c1c1c1;
+	display: inline-block;
+}
+#content {
+	width: 25%;
+	background: blue;
+	display: inline-block;
+}
+#content-info {
+	margin-top: 50%;
+}
+#image {
+	margin: auto;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border: 3px solid white;
+}
+#name {
+	text-align: center;
+}
+#interests {
+	text-align: center;
+}
+#buttons {
+	margin: auto;
+	border: 1px solid white;
+}
