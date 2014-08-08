@@ -91,6 +91,10 @@ path {
 	transition: opacity 0.5s;
 }
 
+.border-path {
+	stroke: #ddd;
+}
+
 .img-path {
 	stroke: #aaa;
 }
@@ -99,10 +103,16 @@ path {
 	stroke: #ddd;
 }
 
+.border-svg {
+	position: absolute;
+	right: 394px;
+	height: 100%;
+	width: 6px;
+}
+
 .img-svg {
 	width: 170px;
 	height: 170px;
-	z-index: 99;
 }
 
 .sm-svg {
@@ -145,6 +155,13 @@ path {
 	#content {
 		width: 100%;
 		height: 50%;
+	}
+	.border-svg {
+		position: relative;
+		right: 0px;
+		top: -8px;
+		height: 6px;
+		width: 100%;
 	}
 	#content-box {
 		top: 50%;
