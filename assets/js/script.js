@@ -4,7 +4,6 @@ function adjust() {
     }
     else {
     	$('#visual').remove().insertAfter($('#content'));
-    	//$('#visual').width($(window).width()-416);
     }
 
  	var divH = $('#content-box').innerHeight()/2;
@@ -18,8 +17,9 @@ $(window).resize(function() {
     adjust();
 });
 
-$(window).keypress(function(e) {
-  if (e.keyCode == 0) {
-    console.log('Space pressed');
-  }
+$(document).ready(function() {
+  $("body").hide();
+});
+$(window).load(function() {
+  $("body").show();
 });
