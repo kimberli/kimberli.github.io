@@ -14,8 +14,8 @@ body,
 #loader {
 	width: 100%;
 	height: 100%;
-	background-image: url('../img/girl.png');
-	transition: background 0.5s;
+	background-image: url('../img/loader.gif') no-repeat;
+	background-position: center center;
 }
 #container {
 	opacity: 0;
