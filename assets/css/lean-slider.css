@@ -22,8 +22,6 @@
     top: 0;
     height: 100%;
     width: 100%;
-    transition: opacity 0.2s linear;
-    opacity: 0.2;
 }
 
 #slider-direction-nav a {
@@ -31,14 +29,21 @@
     display: block;
     width: 40%;
     height: 100%;
-    background: url('../img/arrow-left.png') no-repeat;
-    background-position: left center;
+    background: url('../img/arrow-left.svg') no-repeat;
+    background-size: 15px;
+    background-position: 2% center;
     text-indent: -9999px;
+    transition: opacity 0.2s linear;
+    opacity: 0.2;
+}
+#slider-direction-nav a:hover {
+    opacity: 0.8;
 }
 #slider-direction-nav .lean-slider-next {
     float: right;
-    background: url('../img/arrow-right.png') no-repeat;
-    background-position: right center;
+    background: url('../img/arrow-right.svg') no-repeat;
+    background-size: 15px;
+    background-position: 98% center;
 }
 
 #slider-control-nav {
@@ -50,7 +55,6 @@
     transition: opacity 0.2s linear;
     opacity: 0.2;
 }
-.slider-wrapper:hover #slider-direction-nav,
 .slider-wrapper:hover #slider-control-nav { 
     opacity: 0.8;
 }
@@ -58,13 +62,14 @@
     display: inline-block;
     width: 14px;
     height: 14px;
-    background: url('../img/bullets.png') no-repeat 0 0;
+    background: url('../img/bullet.svg') no-repeat 0 0;
+    background-size: 14px;
     text-indent: -9999px;
     margin: 0 3px;
     transition: none;
 }
 #slider-control-nav a.active { 
-    background-position: 100% 0; 
+    background: url('../img/bullet_active.svg') no-repeat 0 0;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
