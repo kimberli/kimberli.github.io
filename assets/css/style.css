@@ -65,12 +65,47 @@ body,
 	margin: auto;
 	text-align: center;
 }
-
-/* ---- SVG Paths ---- */
-svg {
-	pointer-events: none;
+.sm-pic {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background-size: 50px !important;
+	background-repeat: no-repeat;
+	left: 6px;
+	top: 5px;
+}
+#email {
+	background: url('../img/email.svg');
+}
+#linkedin {
+	background: url('../img/linkedin.svg');
+}
+#github {
+	background: url('../img/github.svg');
+}
+#resume {
+	background: url('../img/resume.svg');
+}
+#email:hover {
+	background: url('../img/email_hover.svg');
+}
+#linkedin:hover {
+	background: url('../img/linkedin_hover.svg');
+}
+#github:hover {
+	background: url('../img/github_hover.svg');
+}
+#resume:hover {
+	background: url('../img/resume_hover.svg');
 }
 
+/* ---- Preload images ---- */
+body:after{
+    display:none;
+    content: url('../img/email_hover.svg') url('../img/linkedin_hover.svg') url('../img/github_hover.svg') url('../img/resume_hover.svg');
+}
+
+/* ---- SVG Paths ---- */
 path {
 	stroke-width: 4;
 	stroke-linecap: round;
@@ -79,12 +114,15 @@ path {
 
 .show {
 	opacity: 1;
-	transition: opacity 0.5s, background 0.5s, box-shadow 0.5s;
+	transition: opacity 0.5s;
 }
 
 .hide {
 	opacity: 0;
 	transition: opacity 0.5s;
+}
+.show-bg {
+	transition: background 0.5s, box-shadow 0.5s;
 }
 
 .hide-bg {
@@ -138,14 +176,6 @@ path {
 	width: 65px;
 	height: 65px;
 	display: inline-block;
-}
-
-.sm-pic {
-	position: absolute;
-	width: 50px;
-	height: 50px;
-	left: 6px;
-	top: 5px;
 }
 
 /* ---- Vertical Layout ---- */
@@ -216,6 +246,10 @@ path {
 	.sm-pic {
 		width: 25px;
 		height: 25px;
+		background-size: 25px !important;
+	}
+	.sm-path {
+		stroke-width: 2px;
 	}
 }
 @media only screen and (max-width: 500px) {

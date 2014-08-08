@@ -10,6 +10,7 @@
 		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
 		<noscript>
 		    <style type="text/css">
+		    	#container {opacity:1;}
 		        .hide { opacity:1; }
 		        .hide-bg { }
 		    </style>
@@ -19,7 +20,7 @@
 		<div id='container'>
 			<div id='content' class='box hide-bg'>
 				<svg id='path1' class='line-drawing border-svg'>
-					<path class='border-path' d='M0 0 L0 2000 Z'/>
+					<path class='border-path' d='M2 0 L2 2000 Z'/>
 				</svg>
 				<div id='content-box'>
 					<div id='image' class='content-info'>
@@ -42,25 +43,25 @@
 								<svg id='img2' class='line-drawing sm-svg'>
 									<path class='sm-path opp' d='M51,30a23,23 0 1,0 -46,0a23,23 0 1,0 46,0'/>
 								</svg>
-								<img class='sm-pic hide' data-svg='img2' src='assets/img/email.svg' />
+								<a href='email.html' target='blank' id='email' class='sm-pic hide'></a>
 							</div>
 							<div class='sm-pic-box'>
 								<svg id='img3' class='line-drawing sm-svg'>
 									<path class='sm-path' d='M5,30a23,23 0 1,0 46,0a23,23 0 1,0 -46,0'/>
 								</svg>
-								<img class='sm-pic hide' data-svg='img3' src='assets/img/linkedin.svg' />
+								<a href='linkedin.html' target='blank' id='linkedin' class='sm-pic hide'></a>
 							</div>
 							<div class='sm-pic-box'>
 								<svg id='img4' class='line-drawing sm-svg'>
 									<path class='sm-path opp' d='M51,30a23,23 0 1,0 -46,0a23,23 0 1,0 46,0'/>
 								</svg>
-								<img class='sm-pic hide' data-svg='img4' src='assets/img/github.svg' />
+								<a href='github.html' target='blank' id='github' class='sm-pic hide'></a>
 							</div>
 							<div class='sm-pic-box'>
 								<svg id='img5' class='line-drawing sm-svg'>
 									<path class='sm-path' d='M5,30a23,23 0 1,0 46,0a23,23 0 1,0 -46,0'/>
 								</svg>
-								<img class='sm-pic hide' data-svg='img5' src='assets/img/resume.svg' />
+								<a href='resume.html' target='blank' id='resume' class='sm-pic hide'></a>
 							</div>
 						</div>
 					</div>

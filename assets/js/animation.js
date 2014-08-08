@@ -84,7 +84,7 @@
 		} );
 		hidden_box.forEach( function( el, i ) {
 			classie.remove( el, 'hide-bg' );
-			classie.add( el, 'show' );
+			classie.add( el, 'show-bg' );
 		} );
 	}
 
