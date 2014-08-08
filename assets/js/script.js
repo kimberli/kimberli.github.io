@@ -31,7 +31,10 @@ function adjust() {
 
 /* Run slider */
 $(document).ready(function() {
-    $('#slider').leanSlider();
+    $('#slider').leanSlider({
+    	directionNav: '#slider-direction-nav',
+    	controlNav: '#slider-control-nav'
+    });
 });
 
 /* Run adjust() for the first time */

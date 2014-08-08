@@ -1,3 +1,9 @@
+.slider-wrapper { 
+    position: relative; 
+    width: 100%;
+    height: 100%;
+}
+
 .lean-slider {
 	overflow: hidden; 
 }
@@ -9,12 +15,45 @@
 .lean-slider-slide.current { 
 	opacity: 1; 
 }
-.lean-slider-slide img { 
-    display: block;
-    width: 100%; 
+
+#slider-direction-nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transition: opacity 0.2s linear;
+    opacity: 0.2;
 }
 
-.slider-wrapper:hover #slider-control-nav { opacity: 1; }
+#slider-direction-nav a {
+    float: left;
+    display: block;
+    width: 40%;
+    height: 100%;
+    background: url('../img/arrow-left.png') no-repeat;
+    background-position: left center;
+    text-indent: -9999px;
+}
+#slider-direction-nav .lean-slider-next {
+    float: right;
+    background: url('../img/arrow-right.png') no-repeat;
+    background-position: right center;
+}
+
+#slider-control-nav {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    transition: opacity 0.2s linear;
+    opacity: 0.2;
+}
+.slider-wrapper:hover #slider-direction-nav,
+.slider-wrapper:hover #slider-control-nav { 
+    opacity: 0.8;
+}
 #slider-control-nav a {
     display: inline-block;
     width: 14px;
@@ -24,7 +63,9 @@
     margin: 0 3px;
     transition: none;
 }
-#slider-control-nav a.active { background-position: 100% 0; }
+#slider-control-nav a.active { 
+    background-position: 100% 0; 
+}
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 

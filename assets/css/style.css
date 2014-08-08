@@ -24,12 +24,13 @@ body,
 #visual {
 	position: relative;
 	margin-right: 400px;
-	z-index: -10;
 }
 #content {
 	width: 400px;
 	float: right;
 	background: #ff4867;
+	position: relative;
+	z-index: 99;
 	box-shadow: 0 0 16px 8px rgba(0,0,0,0.5);
 }
 
