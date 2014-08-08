@@ -34,6 +34,7 @@ adjust();
 
 /* Show window when it loads and run slider */
 $(window).load(function() {
+	$('#container').css('background', 'none');
 	$('#container').css('opacity', 1);
 	$('#slider').leanSlider({
     	directionNav: '#slider-direction-nav',
