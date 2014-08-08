@@ -212,12 +212,7 @@ path {
 	}
 }
 @media only screen and (max-width: 400px) {
-	#visual {
-		height: 45%;
-	}
-	#content {
-		height: 55%;
-	}
+
 	#name {
 		margin-top: 10px;
 		font-size: 26px;
