@@ -40,6 +40,9 @@ $(window).load(function() {
     	directionNav: '#slider-direction-nav',
     	controlNav: '#slider-control-nav'
     });
+  setTimeout(function() {
+    $('<img src="assets/img/java.gif"/>');
+  }, 5000);
 });
 
 // debouncing function from John Hann
