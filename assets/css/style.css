@@ -50,6 +50,10 @@ a {
 
 /* ---- Side Content ---- */
 
+#content-outer-box {
+	height: 100%;
+	margin-bottom: -40px;
+}
 #content-box {
 	position: relative;
 	margin: 0;
@@ -113,6 +117,22 @@ a {
 }
 #resume:hover {
 	background: url('../img/resume_hover.svg');
+}
+.footer {
+	text-align: center;
+}
+.footnote {
+	text-decoration: none;
+	font-family: 'Arvo', sans-serif;
+	font-size: 14px;
+}
+.footnote:link {
+	color: #ffa68f;
+}
+.footnote:visited,
+.footnote:hover,
+.footnote:active {
+	color: #fff9c8;
 }
 
 /* ---- Slider ---- */
