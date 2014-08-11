@@ -160,13 +160,15 @@ a {
 	background-position: center;
 }
 .slide2 {
-	background-image: url('../img/bg2.jpg');
-	background-size: cover;
-	background-position: bottom;
+	background-image: url('../img/loader.gif');
+	background-size: 128px;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 .slide3 {
-	background-image: url('../img/bg3.jpg');
-	background-size: cover;
+	background-image: url('../img/loader.gif');
+	background-size: 128px;
+	background-repeat: no-repeat;
 	background-position: center;
 }
 

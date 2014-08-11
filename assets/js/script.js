@@ -40,9 +40,17 @@ $(window).load(function() {
     	directionNav: '#slider-direction-nav',
     	controlNav: '#slider-control-nav'
     });
+  $('<img src="assets/img/bg2.jpg"/>');
+  $('.slide2').css('background-image','url("assets/img/bg2.jpg")');
+  $('.slide2').css('background-size','cover');
+  $('.slide2').css('background-position','bottom');
+  $('<img src="assets/img/bg3.jpg"/>');
+  $('.slide3').css('background-image','url("assets/img/bg3.jpg")');
+  $('.slide3').css('background-size','cover');
+  $('.slide3').css('background-position','bottom');
   setTimeout(function() {
     $('<img src="assets/img/java.gif"/>');
-  }, 5000);
+  }, 500);
 });
 
 // debouncing function from John Hann
@@ -271,7 +279,7 @@ if ( typeof define === 'function' && define.amd ) {
     
         // Defaults
         var defaults = {
-            pauseTime: 4000,
+            pauseTime: 5000,
             pauseOnHover: true,
             startSlide: 0,
             directionNav: '',
