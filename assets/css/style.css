@@ -120,18 +120,19 @@ a {
 }
 .footer {
 	text-align: center;
-}
-.footnote {
-	text-decoration: none;
 	font-family: 'Arvo', sans-serif;
 	font-size: 14px;
-}
-.footnote:link {
 	color: #ffa68f;
 }
-.footnote:visited,
-.footnote:hover,
-.footnote:active {
+.footer a {
+	text-decoration: none;
+}
+.footer a:link,
+.footer a:visited {
+	color: #ffa68f;
+}
+.footer a:hover,
+.footer a:active {
 	color: #fff9c8;
 }
 
@@ -326,9 +327,8 @@ path {
 		height: 50%;
 	}
 	.border-svg {
-		position: relative;
+		position: absolute;
 		right: 0px;
-		top: -8px;
 		height: 6px;
 		width: 100%;
 	}
