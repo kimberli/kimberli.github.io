@@ -73,6 +73,12 @@ a {
 	color: #fff9c8;
 	font-family: 'Arvo', sans-serif;
 	white-space: nowrap;
+	-webkit-touch-callout: all;
+	  -webkit-user-select: all;
+	   -khtml-user-select: all;
+		 -moz-user-select: all;
+		  -ms-user-select: all;
+			  user-select: all;
 }
 #interests {
 	font-family: 'Merriweather', sans-serif;
