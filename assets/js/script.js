@@ -21,12 +21,7 @@ function adjust() {
 
  	var divHeight = $('#content-box').outerHeight(true)/2;
 	var boxHeight = $('#content').outerHeight(true)/2;
-	if( $(this).width() <= 400 ) {
-		$('#content-box').css({top: Math.round(boxHeight-divHeight-20)});
-	}
-	else {
-		$('#content-box').css({top: Math.round(boxHeight-divHeight)});
-	}
+	$('#content-box').css({top: Math.round(boxHeight-divHeight)});
 }
 
 // Run adjust() for the first time 

@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>SVG Sprite Demonstration</title>
+</head>
+<style>
+div.sprite
+{
+	border: 1px solid black;
+	display: inline-block;
+	width: 512px;
+	height: 512px;	
+}
+
+div#circle { 
+	background-image: url("stack.svg#resume-hover"); 
+	background-repeat: no-repeat;
+	position: top left;
+	background-size: 512px;
+	position: absolute;}
+</style>
+<body>
+<img src='stack.svg' height='1' width='1'>
+
+<object type="image/svg+xml" width="100" height="100" data="stack.svg#arrow-left"></object>
+<object type="image/svg+xml" width="100" height="100" data="stack.svg#arrow-right"></object>
+<object type="image/svg+xml" width="100" height="100" data="stack.svg#bullet"></object>
+<object type="image/svg+xml" width="100" height="100" data="stack.svg#bullet-active"></object>
+<div style="position: relative; height: 65px; width: 65px; display: inline-block; border:1px solid black;">
+<object type="image/svg+xml" width="100%" height="100%" data="stack.svg#email"></object>
+</div>
+<object type="image/svg+xml" width="100" height="100" data="stack.svg#email-hover"></object>
+<object type="image/svg+xml" width="100" height="100" data="stack.svg#linkedin"></object>
+<object type="image/svg+xml" width="100" height="100" data="stack.svg#linkedin-hover"></object>
+<object type="image/svg+xml" width="100" height="100" data="stack.svg#github"></object>
+<object type="image/svg+xml" width="100" height="100" data="stack.svg#github-hover"></object>
+<object type="image/svg+xml" width="100" height="100" data="stack.svg#resume"></object>
+
+<object type="image/svg+xml" width="100" height="100" data="stack.svg#resume-hover"></object>
+<h2>CSS background</h2>
+<div id="circle" class="sprite"></div>
+
+</body>
+</html>

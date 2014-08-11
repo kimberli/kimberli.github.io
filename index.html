@@ -5,7 +5,7 @@
 		<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
 		<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1' />
 		<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no' />
-		<link rel='stylesheet' href='assets/css/style.min.css' />
+		<link rel='stylesheet' href='assets/css/style.css' />
 		<style>@font-face { font-family: 'Arvo'; src: url('assets/fonts/Arvo.ttf');} @font-face { font-family: 'Merriweather'; src: url('assets/fonts/Merriweather.ttf');} </style>
 		<link rel='shortcut icon' href='assets/img/favicon.ico' />
 		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
@@ -20,6 +20,25 @@
 </script>
 	</head>
 	<body>
+		<div id='preload' style='display: none;'>
+			<img src='assets/img/loader.gif' width='1' height='1' />
+			<img src='assets/img/bg2.jpg' width='1' height='1' />
+			<img src='assets/img/bg3.jpg' width='1' height='1' />
+			<img src='assets/img/bg1.jpg' width='1' height='1' />
+			<img src='assets/img/stack.svg' width='1' height='1' />
+			<!--<img src='assets/img/email.svg' width='1' height='1' />
+			<img src='assets/img/email_hover.svg' width='1' height='1' />
+			<img src='assets/img/linkedin.svg' width='1' height='1' />
+			<img src='assets/img/linkedin_hover.svg' width='1' height='1' />
+			<img src='assets/img/github.svg' width='1' height='1' />
+			<img src='assets/img/github_hover.svg' width='1' height='1' />
+			<img src='assets/img/resume.svg' width='1' height='1' />
+			<img src='assets/img/resume_hover.svg' width='1' height='1' />
+			<img src='assets/img/bullet.svg' width='1' height='1' />
+			<img src='assets/img/bullet_active.svg' width='1' height='1' />
+			<img src='assets/img/arrow-right.svg' width='1' height='1' />
+			<img src='assets/img/arrow-left.svg' width='1' height='1' /> -->
+		</div>
 		<div id='loader'>
 		<div id='container'>
 			<div id='content' class='box hide-bg'>
@@ -48,32 +67,40 @@
 									<svg id='img2' class='line-drawing sm-svg'>
 										<path class='sm-path opp' d='M51,30a23,23 0 1,0 -46,0a23,23 0 1,0 46,0'/>
 									</svg>
-									<a href='email.html' target='blank' id='email' class='sm-pic hide'></a>
+									<a href='email.html' target='blank' class='sm-link hide'>
+										<object type="image/svg+xml" id="email-obj" class='sm-pic' data="assets/img/stack.svg#email"></object>
+									</a>
 								</div>
 								<div class='sm-pic-box'>
 									<svg id='img3' class='line-drawing sm-svg'>
 										<path class='sm-path' d='M5,30a23,23 0 1,0 46,0a23,23 0 1,0 -46,0'/>
 									</svg>
-									<a href='linkedin.html' target='blank' id='linkedin' class='sm-pic hide'></a>
+									<a href='linkedin.html' target='blank' class='sm-link hide'>
+										<object type="image/svg+xml" id="linkedin-obj" class='sm-pic' data="assets/img/stack.svg#linkedin"></object>
+									</a>
 								</div>
 								<div class='sm-pic-box'>
 									<svg id='img4' class='line-drawing sm-svg'>
 										<path class='sm-path opp' d='M51,30a23,23 0 1,0 -46,0a23,23 0 1,0 46,0'/>
 									</svg>
-									<a href='github.html' target='blank' id='github' class='sm-pic hide'></a>
+									<a href='github.html' target='blank' class='sm-link hide'>
+										<object type="image/svg+xml" id="github-obj" class='sm-pic' data="assets/img/stack.svg#github"></object>
+									</a>
 								</div>
 								<div class='sm-pic-box'>
 									<svg id='img5' class='line-drawing sm-svg'>
 										<path class='sm-path' d='M5,30a23,23 0 1,0 46,0a23,23 0 1,0 -46,0'/>
 									</svg>
-									<a href='resume.html' target='blank' id='resume' class='sm-pic hide'></a>
+									<a href='resume.html' target='blank' class='sm-link hide'>
+										<object type="image/svg+xml" id="resume-obj" class='sm-pic' data="assets/img/stack.svg#resume"></object>
+									</a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class='footer'>
-					<a href='assets/img/java.gif' class='footnote hide'>Powered by Java*</a>
+					<p class='hide'>Powered by Java<a href='assets/img/java.gif'>*</a></p>
 				</div>
 			</div>
 			<div id='visual' class='box hide'>
@@ -88,24 +115,6 @@
 	      		</div>
 			</div>
 		</div>
-		<div id='preload' style='display: none;'>
-			<img src='assets/img/loader.gif' width='1' height='1' />
-			<img src='assets/img/bg2.jpg' width='1' height='1' />
-			<img src='assets/img/bg3.jpg' width='1' height='1' />
-			<img src='assets/img/bg1.jpg' width='1' height='1' />
-			<img src='assets/img/email.svg' width='1' height='1' />
-			<img src='assets/img/email_hover.svg' width='1' height='1' />
-			<img src='assets/img/linkedin.svg' width='1' height='1' />
-			<img src='assets/img/linkedin_hover.svg' width='1' height='1' />
-			<img src='assets/img/github.svg' width='1' height='1' />
-			<img src='assets/img/github_hover.svg' width='1' height='1' />
-			<img src='assets/img/resume.svg' width='1' height='1' />
-			<img src='assets/img/resume_hover.svg' width='1' height='1' />
-			<img src='assets/img/bullet.svg' width='1' height='1' />
-			<img src='assets/img/bullet_active.svg' width='1' height='1' />
-			<img src='assets/img/arrow-right.svg' width='1' height='1' />
-			<img src='assets/img/arrow-left.svg' width='1' height='1' />
-		</div>
-		<script src='assets/js/script.min.js'></script>
+		<script src='assets/js/script.js'></script>
 	</body>
 </html>

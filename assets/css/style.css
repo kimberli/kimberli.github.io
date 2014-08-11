@@ -52,7 +52,7 @@ a {
 
 #content-outer-box {
 	height: 100%;
-	margin-bottom: -40px;
+	margin-bottom: -36px;
 }
 #content-box {
 	position: relative;
@@ -85,53 +85,37 @@ a {
 	margin: auto;
 	text-align: center;
 }
-.sm-pic {
+.sm-link {
 	position: absolute;
-	width: 50px;
-	height: 50px;
-	background-size: 50px !important;
-	background-repeat: no-repeat;
 	left: 6px;
 	top: 5px;
+	width: 50px;
+	height: 50px;
+	display: block;
 }
-#email {
-	background: url('../img/email.svg');
+.sm-pic {
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
 }
-#linkedin {
-	background: url('../img/linkedin.svg');
-}
-#github {
-	background: url('../img/github.svg');
-}
-#resume {
-	background: url('../img/resume.svg');
-}
-#email:hover {
-	background: url('../img/email_hover.svg');
-}
-#linkedin:hover {
-	background: url('../img/linkedin_hover.svg');
-}
-#github:hover {
-	background: url('../img/github_hover.svg');
-}
-#resume:hover {
-	background: url('../img/resume_hover.svg');
+#stack:hover {
+	fill:black;
 }
 .footer {
 	text-align: center;
-}
-.footnote {
-	text-decoration: none;
 	font-family: 'Arvo', sans-serif;
 	font-size: 14px;
-}
-.footnote:link {
 	color: #ffa68f;
 }
-.footnote:visited,
-.footnote:hover,
-.footnote:active {
+.footer a {
+	text-decoration: none;
+}
+.footer a:link {
+	color: #ffa68f;
+}
+.footer a:visited,
+.footer a:hover,
+.footer a:active {
 	color: #fff9c8;
 }
 
@@ -326,10 +310,8 @@ path {
 		height: 50%;
 	}
 	.border-svg {
-		position: relative;
-		right: 0px;
-		top: -8px;
 		height: 6px;
+		right: 0;
 		width: 100%;
 	}
 	#content-box {
@@ -375,10 +357,9 @@ path {
 		width: 35px;
 		height: 35px;
 	}
-	.sm-pic {
+	.sm-link {
 		width: 25px;
 		height: 25px;
-		background-size: 25px !important;
 	}
 	.sm-path {
 		stroke-width: 2px;
