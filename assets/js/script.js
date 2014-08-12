@@ -21,12 +21,7 @@ function adjust() {
 
  	var divHeight = $('#content-box').outerHeight(true)/2;
 	var boxHeight = $('#content').outerHeight(true)/2;
-	if( $(this).width() <= 400 ) {
-		$('#content-box').css({top: Math.round(boxHeight-divHeight-20)});
-	}
-	else {
-		$('#content-box').css({top: Math.round(boxHeight-divHeight)});
-	}
+	$('#content-box').css({top: Math.round(boxHeight-divHeight)});
 }
 
 // Run adjust() for the first time 
@@ -40,14 +35,6 @@ $(window).load(function() {
     	directionNav: '#slider-direction-nav',
     	controlNav: '#slider-control-nav'
     });
-  $('<img src="assets/img/bg2.jpg"/>');
-  $('.slide2').css('background-image','url("assets/img/bg2.jpg")');
-  $('.slide2').css('background-size','cover');
-  $('.slide2').css('background-position','bottom');
-  $('<img src="assets/img/bg3.jpg"/>');
-  $('.slide3').css('background-image','url("assets/img/bg3.jpg")');
-  $('.slide3').css('background-size','cover');
-  $('.slide3').css('background-position','bottom');
   setTimeout(function() {
     $('<img src="assets/img/java.gif"/>');
   }, 500);

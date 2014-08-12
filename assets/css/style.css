@@ -73,12 +73,6 @@ a {
 	color: #fff9c8;
 	font-family: 'Arvo', sans-serif;
 	white-space: nowrap;
-	-webkit-touch-callout: all;
-	  -webkit-user-select: all;
-	   -khtml-user-select: all;
-		 -moz-user-select: all;
-		  -ms-user-select: all;
-			  user-select: all;
 }
 #interests {
 	font-family: 'Merriweather', sans-serif;
@@ -160,15 +154,13 @@ a {
 	background-position: center;
 }
 .slide2 {
-	background-image: url('../img/loader.gif');
-	background-size: 128px;
-	background-repeat: no-repeat;
+	background-image: url('../img/bg2.jpg');
+	background-size: cover;
 	background-position: center;
 }
 .slide3 {
-	background-image: url('../img/loader.gif');
-	background-size: 128px;
-	background-repeat: no-repeat;
+	background-image: url('../img/bg3.jpg');
+	background-size: cover;
 	background-position: center;
 }
 
