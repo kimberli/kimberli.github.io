@@ -100,8 +100,8 @@ a {
 	left: 6px;
 	top: 5px;
 }
-#email {
-	background: url('../img/email.svg');
+#medium {
+	background: url('../img/medium.svg');
 }
 #linkedin {
 	background: url('../img/linkedin.svg');
@@ -112,8 +112,8 @@ a {
 #resume {
 	background: url('../img/resume.svg');
 }
-#email:hover {
-	background: url('../img/email_hover.svg');
+#medium:hover {
+	background: url('../img/medium_hover.svg');
 }
 #linkedin:hover {
 	background: url('../img/linkedin_hover.svg');
