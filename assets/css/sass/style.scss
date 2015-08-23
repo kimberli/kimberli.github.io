@@ -1,3 +1,9 @@
+/* ---- Variables ---- */
+$color-bg: #FF9897;
+$color-title: #FAEDD3;
+$color-tertiary: #FFD3CC;
+$color-tagline: #fff;
+
 /* ---- Main Structure ---- */
 
 html, 
@@ -39,7 +45,7 @@ body,
 #content {
 	width: 400px;
 	float: right;
-	background: #ff4867;
+	background: $color-bg;
 	position: relative;
 	z-index: 99;
 	box-shadow: 0 0 16px 8px rgba(0,0,0,0.5);
@@ -70,7 +76,7 @@ a {
 #name {
 	text-align: center;
 	font-size: 36px;
-	color: #fff9c8;
+	color: $color-title;
 	font-family: 'Arvo', sans-serif;
 	white-space: nowrap;
 	-webkit-touch-callout: all;
@@ -84,7 +90,7 @@ a {
 	font-family: 'Merriweather', sans-serif;
 	text-align: center;
 	font-style: italic;
-	color: #ffa68f;
+	color: $color-tagline;
 	white-space:nowrap;
 }
 #buttons {
@@ -128,18 +134,18 @@ a {
 	text-align: center;
 	font-family: 'Arvo', sans-serif;
 	font-size: 14px;
-	color: #ffa68f;
+	color: $color-tertiary;
 }
 .footer a {
 	text-decoration: none;
 }
 .footer a:link,
 .footer a:visited {
-	color: #ffa68f;
+	color: $color-tertiary;
 }
 .footer a:hover,
 .footer a:active {
-	color: #fff9c8;
+	color: $color-title;
 }
 
 /* ---- Slider ---- */
@@ -306,7 +312,7 @@ path {
 	position: relative;
 	top: -168px;
 	left: 3px;
-	border: 4px solid #ffa68f;
+	border: 4px solid $color-tertiary;
 	border-radius: 50%;
 }
 
