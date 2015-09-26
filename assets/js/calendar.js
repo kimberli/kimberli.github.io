@@ -4,9 +4,10 @@ $(document).ready(function() {
 		header: {
 			left: 'prev,next today',
 			center: 'title',
-			right: 'month,agendaWeek'
+			right: 'month,basicWeek,agendaWeekCustom'
 		},
 		allDaySlot: false,
+		minTime: "9:00:00",
 		displayEventEnd: true,
 		editable: false,
 		eventLimit: 5, // allow "more" link when too many events
@@ -60,7 +61,14 @@ $(document).ready(function() {
 				$(".fc-next-button").removeClass('fc-state-disabled'); 
 				$(".fc-next-button").prop('disabled', false); 
 			}
-		}
+		},
+		views: {
+	        agendaWeekCustom: {
+	            type: 'agenda',
+	            duration: { days: 7 },
+	            buttonText: 'agenda'
+	        },
+    	}
 	});
 	
 });
