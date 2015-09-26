@@ -6,7 +6,7 @@ $(document).ready(function() {
 			center: 'title',
 			right: 'month,agendaWeek'
 		},
-		allDay: false,
+		allDaySlot: false,
 		displayEventEnd: true,
 		editable: false,
 		eventLimit: 5, // allow "more" link when too many events
