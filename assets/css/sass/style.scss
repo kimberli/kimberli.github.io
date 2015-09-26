@@ -3,6 +3,9 @@ $color-bg: #FF9897;
 $color-title: #FAEDD3;
 $color-tertiary: #FFD3CC;
 $color-tagline: #fff;
+$calendar1: #d85f5f;
+$calendar2: $color-bg;
+$calendar3: #ffbcbc;
 
 /* ---- Main Structure ---- */
 html, 
@@ -201,6 +204,15 @@ a {
 }
 .fc-state-default {
 	background-image: none;
+}
+.calendar1 {
+	background-color: $calendar1;
+}
+.calendar2 {
+	background-color: $calendar2;
+}
+.calendar3 {
+	background-color: $calendar3;
 }
 
 /* ---- Slider ---- */
