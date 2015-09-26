@@ -1,8 +1,8 @@
 // Adjusts main box order, SVG border line path, SVG circle sizes
 function adjust() {
 	if( $(this).width() <= 1024 ) {
-        $('#content').remove().insertAfter($('#visual'));
-        $('.border-path').attr('d','M0 2 L' + $('#content').outerWidth(true) + ' 2 Z');
+        $('#sidebar').remove().insertAfter($('#visual'));
+        $('.border-path').attr('d','M0 2 L' + $('#sidebar').outerWidth(true) + ' 2 Z');
         if( $(this).width() <= 728 ) {
         	$('.img-path').attr('d','M4,55a52,52 0 1,0 104,0a52,52 0 1,0 -104,0');
         	$('.sm-path').attr('d','M8,17a11,11 0 1,0 22,0a11,11 0 1,0 -22,0');
@@ -15,13 +15,13 @@ function adjust() {
         }
     }
     else {
-    	$('#visual').remove().insertAfter($('#content'));
-    	$('.border-path').attr('d','M2 0 L2 ' + $('#content').outerHeight(true) + ' Z');
+    	$('#visual').remove().insertAfter($('#sidebar'));
+    	$('.border-path').attr('d','M2 0 L2 ' + $('#sidebar').outerHeight(true) + ' Z');
     }
 
- 	var divHeight = $('#content-box').outerHeight(true)/2;
-	var boxHeight = $('#content').outerHeight(true)/2;
-	$('#content-box').css({top: Math.round(boxHeight-divHeight)});
+ 	var divHeight = $('#sidebar-box').outerHeight(true)/2;
+	var boxHeight = $('#sidebar').outerHeight(true)/2;
+	$('#sidebar-box').css({top: Math.round(boxHeight-divHeight)});
 }
 
 // Run adjust() for the first time 

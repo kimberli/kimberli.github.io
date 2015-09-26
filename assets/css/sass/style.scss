@@ -5,14 +5,15 @@ $color-tertiary: #FFD3CC;
 $color-tagline: #fff;
 
 /* ---- Main Structure ---- */
-
 html, 
 body,  
-#container { 
+#container,
+#container-no-hide { 
 	margin: 0; 
 	padding: 0; 
 	height: 100%; 
 	width: 100%; 
+	font-family: 'PT Sans', sans-serif;
 }
 #loader {
 	width: 100%;
@@ -38,43 +39,11 @@ body,
 	height: 100%;
 	vertical-align: top;
 }
-#visual {
-	position: relative;
-	margin-right: 400px;
-}
-#content {
-	width: 400px;
-	float: right;
-	background: $color-bg;
-	position: relative;
-	z-index: 99;
-	box-shadow: 0 0 16px 8px rgba(0,0,0,0.5);
-}
-a {
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
-}
-
-/* ---- Side Content ---- */
-
-#content-outer-box {
-	height: 100%;
-	margin-bottom: -40px;
-}
-#content-box {
-	position: relative;
-	margin: 0;
-}
-#image {
-	margin: auto;
-	width: 160px;
-	height: 160px;
+.image-pic {
+	border: 4px solid $color-tertiary;
 	border-radius: 50%;
 }
-#content-text {
-	margin: 5%;
-}
-#name {
-	text-align: center;
+.name {
 	font-size: 36px;
 	color: $color-title;
 	font-family: 'Arvo', sans-serif;
@@ -86,8 +55,54 @@ a {
 		  -ms-user-select: all;
 			  user-select: all;
 }
+#visual {
+	position: relative;
+	margin-right: 400px;
+}
+.content {
+	background: $color-bg;
+}
+
+#sidebar {
+	width: 400px;
+	float: right;
+	position: relative;
+	z-index: 99;
+	box-shadow: 0 0 16px 8px rgba(0,0,0,0.5);
+}
+a {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/* ---- Side Content ---- */
+
+#sidebar-outer-box {
+	height: 100%;
+	margin-bottom: -40px;
+}
+#sidebar-box {
+	position: relative;
+	margin: 0;
+}
+#sidebar-image-box {
+	margin: auto;
+	width: 160px;
+	height: 160px;
+	border-radius: 50%;
+}
+#sidebar-image {
+	position: relative;
+	top: -168px;
+	left: 3px;
+}
+#sidebar-text {
+	margin: 5%;
+}
+#sidebar-name {
+	text-align: center;
+}
 #interests {
-	font-family: 'Merriweather', sans-serif;
+	font-family: 'PT Sans', sans-serif;
 	text-align: center;
 	font-style: italic;
 	color: $color-tagline;
@@ -146,6 +161,46 @@ a {
 .footer a:hover,
 .footer a:active {
 	color: $color-title;
+}
+
+/* ---- Navbar Content ---- */
+#navbar {
+	height: 80px;
+	position: relative;
+	z-index: 99;
+	box-shadow: 0 0 16px 8px rgba(0,0,0,0.5);
+}
+#navbar-image {
+	margin: 11px;
+	width: 50px;
+	height: 50px;
+}
+#navbar-name {
+	display: inline;
+	position: relative;
+	top: -25px;
+}
+
+/* ---- Calendar ---- */
+#calendar-box {
+	padding: 50px 15px 15px 15px;
+}
+#calendar {
+	max-width: 900px;
+	margin: 0 auto;
+}
+.fc-center h2 {
+	padding: 5px 3px;
+}
+.fc-event {
+	border: none;
+	background-color: $color-bg;
+}
+.fc-button {
+	box-shadow:none !important;
+}
+.fc-state-default {
+	background-image: none;
 }
 
 /* ---- Slider ---- */
@@ -308,14 +363,6 @@ path {
 	height: 60px;
 }
 
-.image-pic {
-	position: relative;
-	top: -168px;
-	left: 3px;
-	border: 4px solid $color-tertiary;
-	border-radius: 50%;
-}
-
 .sm-pic-box {
 	position: relative;
 	width: 65px;
@@ -334,7 +381,7 @@ path {
 		width: 100% !important;
 		height: 50%;
 	}
-	#content {
+	#sidebar {
 		width: 100%;
 		height: 50%;
 	}
@@ -344,11 +391,11 @@ path {
 		height: 6px;
 		width: 100%;
 	}
-	#content-box {
+	#sidebar-box {
 		top: 50%;
 		text-align: center;
 	}
-	.content-info {
+	.sidebar-info {
 		display: inline-block;
 		margin: 0;
 		vertical-align: middle;
@@ -359,21 +406,21 @@ path {
 }
 
 @media only screen and (max-width: 728px) {
-	#name {
+	#sidebar-name {
 		font-size: 30px;
 	}
-	#image {
+	#sidebar-image-box {
 		width: 110px;
 		height: 110px;
 	}
-	#content-text {
+	#sidebar-text {
 		margin: 2% 5%;
 	}
 	.img-svg {
 		width: 110px;
 		height: 110px;
 	}
-	.image-pic {
+	#sidebar-image {
 		width: 100px;
 		height: 100px;
 		top: -113px;
@@ -397,22 +444,37 @@ path {
 	}
 }
 @media only screen and (max-width: 500px) {
-	.content-info {
+	.sidebar-info {
 		display: block;
+	}
+	#navbar-name {
+		font-size: 26px;
 	}
 }
 @media only screen and (max-width: 400px) {
 	#visual {
 		height: 45%;
 	}
-	#content {
+	#sidebar {
 		height: 55%;
 	}
-	#name {
+	#sidebar-name {
 		margin-top: 10px;
 		font-size: 26px;
 	}
 	#interests {
 		font-size: 14px;
+	}
+	#navbar-name {
+		font-size: 22px;
+		top: -30px;
+	}
+	.fc-prev-button,
+	.fc-next-button {
+		padding: 0 0.15em !important;
+	}
+	.fc-button-group .fc-button,
+	.fc-left .fc-button {
+		font-size: 0.85em;
 	}
 }
