@@ -4,7 +4,7 @@ $(document).ready(function() {
 		header: {
 			left: 'prev,next today',
 			center: 'title',
-			right: 'month,basicWeek'
+			right: 'month,agendaWeek'
 		},
 		allDay: true,
 		displayEventEnd: true,
