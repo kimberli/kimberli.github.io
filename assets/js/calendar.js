@@ -4,9 +4,10 @@ $(document).ready(function() {
 		header: {
 			left: 'prev,next today',
 			center: 'title',
-			right: 'month,basicWeek,agendaWeekCustom'
+			right: 'agendaWeekCustom,basicWeekCustom,month'
 		},
 		allDaySlot: false,
+		defaultView: 'agendaWeekCustom',
 		minTime: "9:00:00",
 		displayEventEnd: true,
 		editable: false,
@@ -63,9 +64,14 @@ $(document).ready(function() {
 			}
 		},
 		views: {
-	        agendaWeekCustom: {
+			agendaWeekCustom: {
 	            type: 'agenda',
-	            duration: { days: 7 },
+	            duration: { days: 5 },
+	            buttonText: 'week'
+	        },
+	        basicWeekCustom: {
+	            type: 'basicWeek',
+	            duration: { days: 5 },
 	            buttonText: 'agenda'
 	        },
     	}
