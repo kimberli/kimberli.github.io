@@ -66,12 +66,12 @@ $(document).ready(function() {
 		views: {
 			agendaWeekCustom: {
 	            type: 'agenda',
-	            duration: { days: 5 },
+	            duration: { days: 7 },
 	            buttonText: 'week'
 	        },
 	        basicWeekCustom: {
 	            type: 'basicWeek',
-	            duration: { days: 5 },
+	            duration: { days: 7 },
 	            buttonText: 'agenda'
 	        },
     	}
