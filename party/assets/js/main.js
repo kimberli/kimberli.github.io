@@ -9,6 +9,8 @@ $(document).ready(function() {
 
     Gameboard_install(gameboard,presets,container,select);
 
+    setRandom(gameboard);
+
     select.change(function(event) {
         presets.setPreset(gameboard,event.target.value);
     });

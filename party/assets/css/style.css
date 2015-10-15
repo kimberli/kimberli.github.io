@@ -7,6 +7,14 @@ body {
     font-family: 'Comic Sans MS', sans-serif;
     cursor: url("../img/cursor.cur"), progress !important;
 }
+a,
+a:visited {
+    color: magenta;
+}
+a:hover,
+a:active {
+    color: purple;
+}
 #container {
     height: 100%;
     min-height: 100vh;
