@@ -6,10 +6,10 @@ $color-tagline: #fff;
 $calendar1: hsl(355,80%,65%);
 $calendar2: hsl(355,90%,75%);
 $calendar3: hsl(355,100%,85%);
-$medium-bg: rgb(11,227,112);
-$linkedin-bg: hsl(60,100%,100%);
-$github-bg: hsl(60,100%,100%);
-$resume-bg: hsl(60,100%,100%);
+$medium-bg: rgb(35,190,204);
+$linkedin-bg: rgb(255,161,94);
+$github-bg: rgb(65,198,132);
+$resume-bg: rgb(155,107,214);
 $white: hsl(0,100%,100%);
 
 /* ---- Fonts ---- */
@@ -144,6 +144,8 @@ a {
   top: 5px;
   border-radius: 40px;
   border: 4px solid $white;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
   i {
     margin: 10px auto;
     color: $white;
@@ -343,7 +345,7 @@ path {
 
 .show {
   opacity: 1;
-  transition: opacity 0.75s, box-shadow 0.75s;
+  transition: opacity 0.75s, box-shadow 0.75s, background-color 0.75s;
 }
 
 .hide {
