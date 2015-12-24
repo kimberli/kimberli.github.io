@@ -6,6 +6,11 @@ $color-tagline: #fff;
 $calendar1: hsl(355,80%,65%);
 $calendar2: hsl(355,90%,75%);
 $calendar3: hsl(355,100%,85%);
+$medium-bg: hsl(60,100%,100%);
+$linkedin-bg: hsl(60,100%,100%);
+$github-bg: hsl(60,100%,100%);
+$resume-bg: hsl(60,100%,100%);
+$white: hsl(0,100%,100%);
 
 /* ---- Fonts ---- */
 @font-face {
@@ -111,7 +116,7 @@ a {
 }
 #sidebar-image {
   position: relative;
-  top: -168px;
+  top: -169px;
   left: 3px;
 }
 #sidebar-text {
@@ -133,36 +138,29 @@ a {
 }
 .sm-pic {
   position: absolute;
-  width: 50px;
-  height: 50px;
-  background-size: 50px !important;
-  background-repeat: no-repeat;
-  left: 6px;
+  width: 42px;
+  height: 42px;
+  left: 5px;
   top: 5px;
-}
-#medium {
-  background: url('../img/medium.svg');
-}
-#linkedin {
-  background: url('../img/linkedin.svg');
-}
-#github {
-  background: url('../img/github.svg');
-}
-#resume {
-  background: url('../img/resume.svg');
+  border-radius: 40px;
+  border: 4px solid $white;
+  i {
+    margin: 10px auto;
+    color: $white;
+    font-size: 25px;
+  }
 }
 #medium:hover {
-  background: url('../img/medium_hover.svg');
+  background-color: $medium-bg;
 }
 #linkedin:hover {
-  background: url('../img/linkedin_hover.svg');
+  background-color: $linkedin-bg;
 }
 #github:hover {
-  background: url('../img/github_hover.svg');
+  background-color: $github-bg;
 }
 #resume:hover {
-  background: url('../img/resume_hover.svg');
+  background-color: $resume-bg;
 }
 .footer {
   text-align: center;
@@ -416,6 +414,9 @@ path {
     width: 100%;
     height: 50%;
   }
+  #sidebar-image {
+    left: 2px;
+  }
   .border-svg {
     position: absolute;
     right: 0px;
@@ -454,7 +455,7 @@ path {
   #sidebar-image {
     width: 100px;
     height: 100px;
-    top: -113px;
+    top: -114px;
     left: 1px;
   }
   .sm-svg {
@@ -466,9 +467,29 @@ path {
     height: 35px;
   }
   .sm-pic {
-    width: 25px;
-    height: 25px;
-    background-size: 25px !important;
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  left: 5px;
+  top: 5px;
+  border-radius: 40px;
+  border: 4px solid $white;
+  i {
+    margin: 10px auto;
+    color: $white;
+    font-size: 25px;
+  }
+}
+  .sm-pic {
+    width: 20px;
+    height: 20px;
+    border-radius: 13px;
+    border: 2px solid $white;
+    left: 7px;
+    i {
+      font-size: 12px;
+      margin: 0;
+    }
   }
   .sm-path {
     stroke-width: 2px;
