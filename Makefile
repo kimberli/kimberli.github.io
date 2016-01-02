@@ -1,8 +1,14 @@
 SASS := sass
 RM := rm
+TEX := latexmk
+
+TEXFILE := resume.tex
 
 SASSFLAGS := --scss --unix-newlines --style compressed
 RMFLAGS := -rf
+TEXMAKEFLAGS := -quiet -pdf
+TEXCLEANFLAGS := -C
+TEXREMOVEFLAGS := -c
 
 SCSS_DIR := assets/scss
 CSS_OUT := assets/css
@@ -23,5 +29,12 @@ watch:
 
 clean:
 	$(RM) $(RMFLAGS) $(ALL_OBJS) $(CSS_MAPS) .sass-cache
+	$(TEX) $(TEXCLEANFLAGS)
+
+tex:
+	@$(TEX) $(TEXMAKEFLAGS) $(TEXFILE)
+
+cleanaux:
+	@$(TEX) $(TEXREMOVEFLAGS)
 
 .PHONY: all watch clean
