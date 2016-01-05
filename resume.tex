@@ -1,52 +1,176 @@
-%----------Kimberli's LaTeX template----------
+\documentclass[11pt]{article}
 
-%--- Preamble ---
+% page dimensions
+\usepackage[top=.6in, bottom=.6in, left=0.6in, right=.6in]{geometry}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{enumitem}
 
-\documentclass{article}
+% margin notes
+\usepackage{marginnote}
+\reversemarginpar
 
-\usepackage{amsmath}
-\usepackage{mathtools}
-\usepackage{amssymb}
-\usepackage{fancyhdr} 
-\usepackage{fullpage}
-\usepackage{graphicx}
-\usepackage{pgfplots}
-\usepackage{hyperref} 
-\usepackage{parskip}
-\usepackage{titlesec}
-\pgfplotsset{compat=1.10}
+% font
+\usepackage[T1]{fontenc}
+\usepackage[rm,light,sfdefault]{roboto}
 
-\rhead{\author}
-\lhead{Fall 2015}
-\cfoot{\thepage}
-\addtolength{\headsep}{15pt}
-\pagestyle{fancy}
-\setlength{\headheight}{12pt}
-\titleformat{\subsubsection}[runin]{}{}{}{}[]
+% spacing adjustments
+\setlength\parindent{0pt} % no automatic indent
+\setlength{\tabcolsep}{0em} % table horizontal spacing
+\setlist{nosep}
+\setlist[itemize]{label=$\circ$}
+\renewcommand{\baselinestretch}{1} % line spacing
 
-%--- The Document & Definitions---
+% custom commands
+% \newcommand{\rsection}[1]{\hspace{-0.3in}\rotatebox[origin=l]{90}{\marginnote{#1}}\vspace{-1em}} % section with title in margin
+\newcommand{\rsection}[1]{\vspace{1em}\textcolor{gray}{\Large \robotoslab #1}\vspace{0.5em}}
+\newcommand{\bd}[1]{\textbf{#1}}
+\newcommand{\bt}[1]{\textit{\textbf{#1}}} % bold title
+\newcommand{\gap}[0]{\vspace{0.5em}} % gap between items
+\newcommand{\sgap}[0]{\vspace{0.2em}} % small gap between items
+\newcommand{\dash}[0]{ $-$ } % styled dash
+\newcommand{\tabsep}[0]{\, / \,} % table separator
+\newcommand{\arr}[0]{ $\hspace{0.2em}\rightarrow\hspace{0.2em}$ } % arrow
+
 
 \begin{document}
-\newcommand{\class}{Title}
-\newcommand{\duedate}{Date}
-\newcommand{\classsection}{Section}
-\newcommand{\collaboration}{Collaborators}
-\newcommand{\creator}{Kimberli Zhong}
+\pagenumbering{gobble} % avoid page numbering
 
-%--- Title ---
+\begin{tabularx}{\textwidth}{Xr}
+    \robotoslab
+    \begin{tabular}[x]{@{}l@{}}
+        {\Huge Kimberli Zhong} \sgap \\
+        {\Large \href{http://kimberli.me}{http://kimberli.me}}
+    \end{tabular}
+&   \footnotesize
+    \begin{tabular}[x]{@{}r@{}}
+        (925) 255-5295 \\
+        \href{mailto:kimberli@mit.edu}{kimberli@mit.edu} \\
+         \href{https://github.com/kimberli}{https://github.com/kimberli} \\
+        \href{https://linkedin.com/in/kimberlizhong}{https://linkedin.com/in/kimberlizhong}
+    \end{tabular}
+\end{tabularx}
+\rule{7.3in}{0.05em}
 
-\begin{center}
-~\\[1cm] 
-{\huge \class} \\[0.4cm] 
-{\large \creator} \\[0.2cm]
-{\large \duedate} \\[0.2cm]
-{\large \classsection} \\[0.2cm]
-{\large \collaboration} 
-\end{center}
+\gap
 
-%--- Problem 1 ---
-\section*{Problem 1}
-\subsection*{Part A}
+\rsection{Education}
+
+\bt{Student}\dash Massachusetts Institute of Technology (2014-2018) \hfill Computer Science \& Engineering, 5.0 GP\hspace{-0.5px}A
+
+\gap
+
+\begingroup
+    \footnotesize
+    \begin{tabular}{rcl}
+        6.006 & \arr & Intro to Algorithms \\
+        6.005 & \arr & Software Construction \\
+        6.042 & \arr & Math for CS
+    \end{tabular}
+    \hfill
+    \begin{tabular}{rcl}
+    6.01 & \arr & Intro to EECS \\
+    18.03 & \arr & Differential Equations \\
+    6.179 & \arr & Intro to C/C++
+    \end{tabular}
+    \hfill
+    \begin{tabular}{rcl}
+    6.004 & \arr & Computation Structures \\
+    6.170 & \arr & Software Studio \\
+    6.034 & \arr & Artificial Intelligence
+    \end{tabular}
+\endgroup
+
+\rsection{Work}
+
+\bt{Engineering Practicum Intern}\dash Google (Summer 2015)
+
+\begin{itemize}
+\item Developed an Android app for benchmarking Android libraries using Java and C++
+\item Built a test system that runs automatically and tracks historical data using Python, Flask, Angular
+\end{itemize}
+
+\gap
+
+\bt{Software Development Intern}\dash fxdgr (January 2015)
+
+\begin{itemize}
+\item Developed asynchronous collaborative editing web application using SQLite, Tornado, JavaScript
+\end{itemize}
+
+\gap
+
+\bt{Cybersecurity Intern}\dash Naval Postgraduate School Center for Cyber Warfare (Summer 2013)
+
+\begin{itemize}
+\item Investigated Windows operating system security
+\item Used the C++ programming language to write and test malware
+\end{itemize}
+
+\rsection{Engineering}
+
+\bt{Student}\dash MIT 6.170 Software Studio (Fall 2015)
+
+\begin{itemize}
+\item Awarded Best Feature Set for final project, a real-time group note-taking app built with Node.js, Angular
+\item Received top 10 overall grade in class about fundamentals of software construction using web technologies
+\end{itemize}
+
+\gap
+
+\bt{Competitor}\dash MIT 6.470 Web Programming Competition (January 2015)
+
+\begin{itemize}
+\item Worked with a team of two other freshmen on a web app for academic competition preparation
+\item Won Most Responsive Design \& 4th Place in Main Division
+\end{itemize}
+
+\gap
+
+\bt{Captain}\dash Robotics competition teams 5327C \& 5327A (2011-2014)
+
+\begin{itemize}
+\item Led 10-member team in designing, building, programming, and testing a VEX competition robot
+\item Won Division Champion (2014) \& Judges' Award (2013) at VEX World Championship
+\end{itemize}
+
+\gap
+
+\bt{Developer}\dash Robotics engineering notebook website (2013-2014), robotics scouting database app (2013)
+
+\begin{itemize}
+\item Implemented online system for keeping track of robotics team meetings based on MediaWiki
+\item Led team in creating internationally recognized robotics scouting database using MySQL, PHP
+\end{itemize}
+
+\rsection{Leadership}
+
+\bt{Co-Director \& Organizer}\dash HackMIT (2014 \& 2015), Blueprint (2015)
+
+\begin{itemize}
+\item Lead organizing team of ~25 students for HackMIT, a 1000-person collegiate hackathon, and Blueprint
+\end{itemize}
+
+\gap
+
+\bt{Student Partner}\dash Rough Draft Ventures (2015-2016)
+
+\begin{itemize}
+\item Meet with Boston-area student startups \& contribute to investment decisions (up to \$25k)
+\end{itemize}
+
+\gap
+
+\bt{Teaching Staff}\dash MIT 6.470 Web Programming Competition (2015)
+
+\begin{itemize}
+\item Help organize and teach month-long MIT class \& competition where students learn to use web technologies
+\end{itemize}
+
+\rsection{Skills}
+
+Python, Java, Node.js, AngularJS, JavaScript, Flask, MongoDB, PHP, MySQL, CSS, C, C++, Git, LaTeX
 
 
 \end{document}
