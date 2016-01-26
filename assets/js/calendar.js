@@ -1,5 +1,5 @@
 $(document).ready(function() {
-		
+
 	$('#calendar').fullCalendar({
 		header: {
 			left: 'prev,next today',
@@ -15,12 +15,16 @@ $(document).ready(function() {
 		fixedWeekCount: false,
 		googleCalendarApiKey: 'AIzaSyCtq5y1rGdrlNnqDs1n1GBavHy4lDstckM',
 		height: 'auto',
-		weekends: false, 
+		weekends: false,
 		eventSources: [
 			{
 				googleCalendarId: 'kimberlizhong@gmail.com',
 				className: 'calendar1',
-			}, 
+			},
+			{
+				googleCalendarId: 'qn6hfvvg804r0j0ghuuatmpvoc@group.calendar.google.com',
+				className: 'calendar2',
+			},
 			{
 				googleCalendarId: 've8r280thumd5h4u5jqg69c1to@group.calendar.google.com',
 				className: 'calendar1',
@@ -36,7 +40,7 @@ $(document).ready(function() {
 			{
 				googleCalendarId: '4cj5594qdd3c48beoopmpfeih4@group.calendar.google.com',
 				className: 'calendar2',
-			}
+			},
 		],
 		viewRender: function(currentView){
 			var minDate = moment().startOf('month');
@@ -48,19 +52,19 @@ $(document).ready(function() {
 			    maxDate.subtract(1, 'day');
 			}
 			if (minDate.isAfter(currentView.start) && minDate.isBefore(currentView.end)) {
-				$(".fc-prev-button").prop('disabled', true); 
-				$(".fc-prev-button").addClass('fc-state-disabled'); 
+				$(".fc-prev-button").prop('disabled', true);
+				$(".fc-prev-button").addClass('fc-state-disabled');
 			}
 			else {
-				$(".fc-prev-button").removeClass('fc-state-disabled'); 
-				$(".fc-prev-button").prop('disabled', false); 
+				$(".fc-prev-button").removeClass('fc-state-disabled');
+				$(".fc-prev-button").prop('disabled', false);
 			}
 			if (maxDate.isAfter(currentView.start) && maxDate.isBefore(currentView.end)) {
-				$(".fc-next-button").prop('disabled', true); 
-				$(".fc-next-button").addClass('fc-state-disabled'); 
+				$(".fc-next-button").prop('disabled', true);
+				$(".fc-next-button").addClass('fc-state-disabled');
 			} else {
-				$(".fc-next-button").removeClass('fc-state-disabled'); 
-				$(".fc-next-button").prop('disabled', false); 
+				$(".fc-next-button").removeClass('fc-state-disabled');
+				$(".fc-next-button").prop('disabled', false);
 			}
 		},
 		views: {
@@ -76,5 +80,5 @@ $(document).ready(function() {
 	        },
     	}
 	});
-	
+
 });
