@@ -13,6 +13,7 @@ $(document).ready(function() {
 		editable: false,
 		eventLimit: 5, // allow "more" link when too many events
 		fixedWeekCount: false,
+		timezone: false,
 		googleCalendarApiKey: 'AIzaSyCtq5y1rGdrlNnqDs1n1GBavHy4lDstckM',
 		height: 'auto',
 		weekends: false,
