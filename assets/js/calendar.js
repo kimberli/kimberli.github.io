@@ -10,6 +10,7 @@ $(document).ready(function() {
 		defaultView: 'agendaWeekCustom',
 		minTime: "9:00:00",
 		displayEventEnd: true,
+		timezone: 'America/New_York',
 		editable: false,
 		eventLimit: 5, // allow "more" link when too many events
 		fixedWeekCount: false,
