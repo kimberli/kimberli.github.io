@@ -33,7 +33,8 @@
 \newcommand{\tabsep}[0]{\, / \,} % table separator
 \newcommand{\arr}[0]{ $\hspace{0.2em}\rightarrow\hspace{0.2em}$ } % arrow
 \newcommand{\gray}[1]{\textcolor{gray}{#1}}
-
+\newcommand{\e}[0]{> }
+\newcommand{\E}[0]{$\triangleright$ }
 
 \begin{document}
 \pagenumbering{gobble} % avoid page numbering
@@ -62,17 +63,22 @@
 
 B.S. in Computer Science \& Engineering \hfill GP\hspace{-0.5px}A: 5.0/5.0
 
-\begin{itemize}
-\item \textit{Selected Courses:} Algorithm Design, Computer System Engineering, Machine Learning, Intro to Algorithms, Software Construction, Computation Structures, Software Studio, Artificial Intelligence, Micro- \& Macroeconomics
-\item \textit{Planned Courses:} Operating Systems, Performance Engineering, Computational Cognitive Science
-\end{itemize}
+{
+\footnotesize
+\begin{tabularx}{\textwidth}{ X X X X }
+  \e Algorithm Design \& Analysis & \e Computer System Engineering & \e Machine Learning & \e Intro to Algorithms \\
+  \e Software Construction & \e Computation Structures & \e Software Studio & \e Artificial Intelligence \\
+  \e Micro- \& Macroeconomics & \e Differential Equations & \e Operating Systems* & \e Performance Engineering*
+\end{tabularx}
+}
 
 \rsection{Work}
 
 \bt{Airbnb}\dash Software Engineering Intern \hfill \gray{Summer 2016}
 
 \begin{itemize}
-\item Working on government ID image processing on the Trust team
+\item[\e] Worked on government ID image processing on the Trust team using Tesseract, Ruby on Rails, and OpenCV
+\item[\e] Developed service to preprocess image and determine ID image quality
 \end{itemize}
 
 \gap
@@ -80,8 +86,8 @@ B.S. in Computer Science \& Engineering \hfill GP\hspace{-0.5px}A: 5.0/5.0
 \bt{Google}\dash Engineering Practicum Intern \hfill \gray{Summer 2015}
 
 \begin{itemize}
-\item Developed an Android app for benchmarking Android libraries using Java and C++
-\item Built a test system that runs automatically and tracks historical data using Python, Flask, Angular
+\item[\e] Developed an Android app for benchmarking Android libraries using Java and C++
+\item[\e] Built a test system that runs automatically and tracks historical data using Python, Flask, Angular
 \end{itemize}
 
 \gap
@@ -89,7 +95,7 @@ B.S. in Computer Science \& Engineering \hfill GP\hspace{-0.5px}A: 5.0/5.0
 \bt{fxdgr}\dash Software Development Intern \hfill \gray{January 2015}
 
 \begin{itemize}
-\item Developed asynchronous collaborative editing web application using SQLite, Tornado, JavaScript
+\item[\e] Developed asynchronous collaborative editing web application using SQLite, Tornado, JavaScript
 \end{itemize}
 
 \rsection{Engineering}
@@ -97,8 +103,8 @@ B.S. in Computer Science \& Engineering \hfill GP\hspace{-0.5px}A: 5.0/5.0
 \bt{MIT 6.170 Software Studio} \hfill \gray{Fall 2015}
 
 \begin{itemize}
-\item Received top 10 overall grade in class about fundamentals of software construction using web technologies
-\item[$\bullet$] Best Feature Set\dash final class project; built a real-time group note-taking app built with Node.js, Angular
+\item[\e] Received top 10 overall grade in class about fundamentals of software construction using web technologies
+\item[\e] \textit{Best Feature Set}\dash final class project; built a real-time group note-taking app built with Node.js, Angular
 \end{itemize}
 
 \gap
@@ -106,7 +112,7 @@ B.S. in Computer Science \& Engineering \hfill GP\hspace{-0.5px}A: 5.0/5.0
 \bt{MIT Media Lab Human Dynamics Group} \hfill \gray{Fall 2015}
 
 \begin{itemize}
-\item Worked on open-source behavioral dynamics virtual data collection platform
+\item[\e] Worked on open-source behavioral dynamics virtual data collection platform
 \end{itemize}
 
 \gap
@@ -114,26 +120,26 @@ B.S. in Computer Science \& Engineering \hfill GP\hspace{-0.5px}A: 5.0/5.0
 \bt{MIT 6.470 Web Programming Competition} \hfill \gray{January 2015}
 
 \begin{itemize}
-\item Worked with a team of two other freshmen on an app for academic competitions using Node.js
-\item[$\bullet$] Most Responsive Design \& 4th Place\dash Main Division
-\end{itemize}
-
-\gap
-
-\bt{VEX Robotics Competition} \hfill \gray{2011-2014}
-
-\begin{itemize}
-\item Led 10-member team in designing, building, programming, and testing a VEX competition robot
-\item[$\bullet$] Division Champion \& Judges' Award\dash VEX World Championship
+\item[\e] Worked with a team of two other freshmen on an app for academic competitions using Node.js
+\item[\e] \textit{Most Responsive Design \& 4th Place}\dash Main Division
 \end{itemize}
 
 \rsection{Leadership}
 
+\bt{KPCB}\dash Engineering Fellow \hfill \gray{Summer 2016}
+
+\begin{itemize}
+\item[\e] Selected for summer fellowship with KPCB, one of the largest venture capital firms in Silicon Valley
+\item[\e] Participated in discussions, talks, and networking events alongside full-time summer internship
+\end{itemize}
+
+\gap
+
 \bt{HackMIT \& Blueprint}\dash Co-director \& Organizer \hfill \gray{2014-now}
 
 \begin{itemize}
-\item Lead organizing team of \textasciitilde 25 students for HackMIT, a 1000-person collegiate hackathon
-\item Organize Blueprint, a learnathon and hackathon for local high school students
+\item[\e] Lead organizing team of \textasciitilde 25 students for HackMIT, a 1000-person collegiate hackathon
+\item[\e] Organize Blueprint, a learnathon and hackathon for local high school students
 \end{itemize}
 
 \gap
@@ -141,7 +147,7 @@ B.S. in Computer Science \& Engineering \hfill GP\hspace{-0.5px}A: 5.0/5.0
 \bt{Rough Draft Ventures}\dash Student Partner \hfill \gray{2015-now}
 
 \begin{itemize}
-\item Meet with Boston-area student startups \& contribute to investment decisions (up to \$25k funding)
+\item[\e] Meet with Boston-area student startups \& contribute to investment decisions (up to \$25k funding)
 \end{itemize}
 
 \gap
@@ -149,7 +155,7 @@ B.S. in Computer Science \& Engineering \hfill GP\hspace{-0.5px}A: 5.0/5.0
 \bt{MIT 6.470 Web Programming Competition}\dash Teaching Staff \hfill \gray{2015-now}
 
 \begin{itemize}
-\item Help teach student-run, month-long MIT class \& competition where students learn to use web technologies
+\item[\e] Help teach student-run, month-long MIT class \& competition where students learn to use web technologies
 \end{itemize}
 
 \rsection{Skills}
