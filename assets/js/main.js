@@ -1,3 +1,33 @@
+var failResponse = "command not found: ";
+var matchResponse = "Looks like you know your stuff! If you'd like this to actually work, feel free to contribute <a href='https://github.com/kimberli/kimberli.github.io'>here</a>! ;)";
+var easterEgg = "u hacked me bye :'(";
+
+var matchCommands = [
+    'cal',
+    'cat',
+    'cd',
+    'chmod',
+    'cp',
+    'date',
+    'df',
+    'du',
+    'find',
+    'jobs',
+    'kill',
+    'less',
+    'more',
+    'ls',
+    'man',
+    'mkdir',
+    'mv',
+    'ps',
+    'pwd',
+    'rm',
+    'rmdir',
+    'set',
+    'vi',
+];
+
 var data = [
     {
         "command": "whoami",
@@ -51,6 +81,32 @@ function addPrompt(index) {
     level.append($("<span class='command' id='" + tagName + "'></span>"));
 }
 
+function showFinalPrompt() {
+    var response = $("<div class='response'></div>");
+    $(".code").append(response);
+    var field = $("<input class='input' id='user-prompt'></input>");
+    var submit = $("<input class='hidden' type='submit'></input>");
+    var form = $("<form></form>");
+    form.append(field);
+    form.append(submit);
+    form.submit(function(e) {
+        e.preventDefault();
+        var command = field.val().split(/(\s)/)[0];
+        if (field.val() === "sudo rm -rf /") {
+            response.html(easterEgg);
+            field.prop("disabled", true);
+        } else if (matchCommands.indexOf(command.toLowerCase()) > -1) {
+            response.html(matchResponse);
+            field.prop("disabled", true);
+        } else {
+            response.html(failResponse + command);
+            field.prop("disabled", true);
+        }
+    });
+    $("#command-" + data.length).append(form);
+    field.focus();
+}
+
 function typeCommand(index) {
     createTyped("#command-" + index, data[index].command, function() {
         $(".typed-cursor").hide();
@@ -58,25 +114,7 @@ function typeCommand(index) {
             showResponse(index);
             addPrompt(index + 1);
             if (index + 1 === data.length) {
-                var response = $("<div class='response'></div>");
-                $(".code").append(response);
-                var field = $("<input class='input' id='user-prompt'></input>");
-                var submit = $("<input class='hidden' type='submit'></input>");
-                var form = $("<form></form>");
-                form.append(field);
-                form.append(submit);
-                form.submit(function(e) {
-                    e.preventDefault();
-                    if (field.val() === "rm -rf /") {
-                        response.text("u hacked me bye");
-                        field.prop("disabled", true);
-                    } else if (field.val() && !response.text()) {
-                        response.text("Jokes on you! This doesn't do anything ;)");
-                        field.prop("disabled", true);
-                    }
-                });
-                $("#command-" + data.length).append(form);
-                field.focus();
+                showFinalPrompt();
             } else {
                 setTimeout(function() {
                     typeCommand(index + 1);
