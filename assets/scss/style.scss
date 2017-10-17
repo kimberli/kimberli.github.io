@@ -10,9 +10,34 @@ $white: #ededed;
 
 $body-background-color: #132132;
 $text: $white;
+$link: $blue;
+$link-visited: darken($blue, 10%);
+$link-hover: darken($blue, 10%);
 $primary: $red;
 
 $family-primary: "Roboto Mono", monospace;
+@import "../../node_modules/bulma/bulma";
+
+.code {
+    padding: 1rem 0;
+}
+
+.level:last-child {
+    .level-left {
+        width: 100%; // idk how to frontend sorry
+    }
+    .command {
+        width: 100%;
+    }
+}
+
+.level:not(:last-child) {
+    margin-bottom: 0;
+}
+
+.level{
+    margin-top: 1rem;
+}
 
 .prompt {
     background-color: $red;
@@ -29,4 +54,18 @@ $family-primary: "Roboto Mono", monospace;
     padding-right: 0.5rem;
 }
 
-@import "../../node_modules/bulma/bulma";
+#user-prompt {
+    background: transparent;
+    border: none;
+    padding: 0;
+    width: 100%;
+    color: $white;
+}
+
+input:focus {
+    outline: none !important;
+}
+
+.typed-cursor {
+    display: none;
+}
