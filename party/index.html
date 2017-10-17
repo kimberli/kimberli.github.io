@@ -2,8 +2,7 @@
 <!-- Author: Kimberli Zhong
     6.170 project 2
     Fall 2015
-    This isn't responsive because there were no smartphones in the 1990s--sorry!
--->
+    This isn't responsive because there were no smartphones in the 1990s. Sorry! -->
 <html lang='en'>
 <head>
     <title>Game of Life</title>
@@ -16,15 +15,16 @@
     <script src="assets/js/gamecontroller.js"></script>
     <script src="assets/js/presets.js"></script>
     <script src="assets/js/main.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-53641188-1"></script>
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-53641188-1', 'auto');
-      ga('require', 'displayfeatures');
-      ga('send', 'pageview');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-53641188-1');
     </script>
+
 </head>
 <body>
         <div id="nav">
@@ -34,15 +34,15 @@
         </div>
         <div id="container">
             <h1 id="title">
-                <img class="title-gif" src="assets/img/baby.gif"></img>
-                <img class="title-gif" src="assets/img/mchammer.gif"></img>
+                <img class="title-gif" src="assets/img/baby.gif" alt="title">
+                <img class="title-gif" src="assets/img/mchammer.gif" alt="mchammer">
                 <span class="g">G</span><span class="a">a</span><span class="m">m</span><span class="e">e</span>
                 <span class="o">o</span><span class="f">f</span>
                 <blink><span class="l">L</span><span class="i">i</span><span class="f2">f</span><span class="e2">e</span></blink>
-                <img class="title-gif" src="assets/img/mchammer.gif"></img>
-                <img class="title-gif" src="assets/img/baby.gif"></img>
+                <img class="title-gif" src="assets/img/mchammer.gif" alt="mchammer">
+                <img class="title-gif" src="assets/img/baby.gif" alt="baby">
             </h1>
-            <img class="construction-gif" src="assets/img/construction.gif"></img>
+            <img class="construction-gif" src="assets/img/construction.gif" alt="construction">
             <div id="game-container"></div>
             <div id="game-controls">
                 <button class="btn btn-primary" id="game-start">Start</button>
@@ -50,14 +50,14 @@
                 <button class="btn btn-info" id="game-reset">Reset</button>
                 <button class="btn btn-info" id="game-random">Random</button>
                 <select class="select" id="game-select"><option value="">Pick a preset</option></select>
-                <img src="assets/img/hot.gif"></img>
+                <img src="assets/img/hot.gif" alt="hot">
             </div>
             <div id="footer">
-                <img src="assets/img/footer1.gif"></img>
-                <img src="assets/img/footer2.gif"></img>
-                <img src="assets/img/footer3.gif"></img>
-                <img src="assets/img/footer4.gif"></img>
-                <img src="assets/img/footer5.gif"></img>
+                <img src="assets/img/footer1.gif" alt="footer">
+                <img src="assets/img/footer2.gif" alt="footer">
+                <img src="assets/img/footer3.gif" alt="footer">
+                <img src="assets/img/footer4.gif" alt="footer">
+                <img src="assets/img/footer5.gif" alt="footer">
             </div>
         </div>
 </body>

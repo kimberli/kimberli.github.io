@@ -64,8 +64,11 @@ a:active {
     padding: 0;
     width: 100%;
     color: $white;
-    cursor: default;
     box-shadow: none;
+}
+
+#user-prompt[disabled] {
+    cursor: default;
 }
 
 .typed-cursor {
