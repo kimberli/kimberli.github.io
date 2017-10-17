@@ -10,25 +10,23 @@ $white: #ededed;
 
 $body-background-color: #132132;
 $text: $white;
-$link: $blue;
-$link-visited: darken($blue, 10%);
-$link-hover: darken($blue, 10%);
+$link: $cyan;
+$link-visited: $link;
+$link-hover: darken($link, 10%);
 $primary: $red;
 
 $family-primary: "Roboto Mono", monospace;
 @import "../../node_modules/bulma/bulma";
 
-.code {
-    padding: 1rem 0;
+.hidden {
+    display: none;
 }
 
-.level:last-child {
-    .level-left {
-        width: 100%; // idk how to frontend sorry
-    }
-    .command {
-        width: 100%;
-    }
+.level-left {
+    width: 100%; // idk how to frontend sorry
+}
+.command {
+    width: 100%;
 }
 
 .level:not(:last-child) {
@@ -60,12 +58,14 @@ $family-primary: "Roboto Mono", monospace;
     padding: 0;
     width: 100%;
     color: $white;
-}
-
-input:focus {
-    outline: none !important;
+    cursor: default;
+    outline: 0;
 }
 
 .typed-cursor {
     display: none;
+}
+
+*:focus {
+    outline: 0;
 }
