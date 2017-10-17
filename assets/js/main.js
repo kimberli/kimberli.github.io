@@ -1,7 +1,7 @@
 var data = [
     {
         "command": "whoami",
-        "response": "Hi! I'm Kimberli, a senior studying Electrical Engineering and Computer Science at MIT."
+        "response": "Hi! I'm Kimberli, a senior studying Computer Science and Engineering at MIT."
     },
     {
         "command": "cd info",
