@@ -1,0 +1,23 @@
+{
+  "name": "kimberli_homepage",
+  "version": "1.0.0",
+  "description": "You can find the page at http://kimberli.me!",
+  "main": "index.html",
+  "dependencies": {
+    "bulma": "^0.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimberli/kimberli.github.io.git"
+  },
+  "author": "kimberli",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kimberli/kimberli.github.io/issues"
+  },
+  "homepage": "https://github.com/kimberli/kimberli.github.io#readme"
+}

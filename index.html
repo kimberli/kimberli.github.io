@@ -1,152 +1,38 @@
-<!DOCTYPE html>
-<!--
-	Kimberli's personal website!
-	Apologies for the shitty code
-	this project was started when I was first learning about the internet & HTML/CSS
+<!doctype html>
 
-	min supported screen width: 300px
-
-	Repo is at https://github.com/kimberli/kimberli.github.io
-
-
-
-	thank mr skeltal
-
-	░░░░░░░░░░░▐▄▐
-	░░░░░░▄▄▄░░▄██▄
-	░░░░░▐▀█▀▌░░░░▀█▄
-	░░░░░▐█▄█▌░░░░░░▀█▄
-	░░░░░░▀▄▀░░░▄▄▄▄▄▀▀
-	░░░░▄▄▄██▀▀▀▀
-	░░░█▀▄▄▄█░▀▀
-	░░░▌░▄▄▄▐▌▀▀▀
-	▄░▐░░░▄▄░█░▀▀
-	▀█▌░░░▄░▀█▀░▀
-	░░░░░░░▄▄▐▌▄▄
-	░░░░░░░▀███▀█░▄
-	░░░░░░▐▌▀▄▀▄▀▐▄
-	░░░░░░▐▀░░░░░░▐▌
-	░░░░░░█░░░░░░░░█
-	░░░░░▐▌░░░░░░░░░█
-	░░░░░█░░░░░░░░░░▐▌
-
- -->
 <html lang='en'>
-	<head>
-		<title>Kimberli Zhong</title>
-		<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
-		<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
-		<meta name='description' content='An MIT student studying computer science & electrical engineering. Fascinated by technology, automation, and making stuff.'>
-		<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no'>
-    <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href='/assets/vendor/font-awesome/css/font-awesome.min.css'>
-		<link href='/assets/css/style.css' rel='stylesheet'>
-		<link href='/assets/img/favicon.ico' rel='shortcut icon'>
-		<script src='/assets/vendor/jquery/jquery.min.js'></script>
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		  ga('create', 'UA-53641188-1', 'auto');
-		  ga('require', 'displayfeatures');
-		  ga('send', 'pageview');
-		</script>
-	</head>
-	<body>
-		<div id='loader'>
-		<div id='container'>
-			<div id='sidebar' class='content box hide-bg'>
-				<svg id='path1' class='line-drawing border-svg'>
-					<path class='border-path' d='M2 0 L2 2000 Z'/>
-				</svg>
-				<div id='sidebar-outer-box'>
-					<div id='sidebar-box'>
-						<div id='sidebar-image-box' class='sidebar-info'>
-							<svg id='img1' class='line-drawing img-svg'>
-								<path class='img-path' d='M5,85a77,77 0 1,0 154,0a77,77 0 1,0 -154,0'/>
-							</svg>
-							<img id='sidebar-image' class='image-pic hide' data-svg='img1' src='/assets/img/pic.jpg'>
-						</div>
-						<div id='sidebar-side' class='sidebar-info'>
-							<div id='sidebar-text'>
-								<div id='sidebar-name' class='name hide'>
-									Kimberli Zhong
-								</div>
-								<div itemscope id='interests' class='hide' itemtype='http://data-vocabulary.org/Person'>
-									2018@MIT. co-director@HackMIT.
-									<meta itemprop='name' content='Kimberli Zhong'>
-									<meta itemprop='role' content='Student'>
-									<meta itemprop='title' content='Student'>
-									<meta itemprop='affiliation' content='Massachusetts Institute of Technology'>
-									<meta itemprop='url' content='http://kimberli.me'>
-									<meta itemprop='photo' content='/assets/img/pic.jpg'>
-								</div>
-							</div>
-							<div id='buttons'>
-								<div class='sm-pic-box'>
-									<svg id='img2' class='line-drawing sm-svg'>
-										<path class='sm-path opp' d='M51,30a23,23 0 1,0 -46,0a23,23 0 1,0 46,0'/>
-									</svg>
-									<a href='/medium' target='blank' id='medium' class='sm-pic hide'><i class="fa fa-medium"></i></a>
-								</div>
-								<div class='sm-pic-box'>
-									<svg id='img3' class='line-drawing sm-svg'>
-										<path class='sm-path' d='M5,30a23,23 0 1,0 46,0a23,23 0 1,0 -46,0'/>
-									</svg>
-									<a href='/linkedin' target='blank' id='linkedin' class='sm-pic hide'><i class="fa fa-linkedin"></i></a>
-								</div>
-								<div class='sm-pic-box'>
-									<svg id='img4' class='line-drawing sm-svg'>
-										<path class='sm-path opp' d='M50,30a23,23 0 1,0 -46,0a23,23 0 1,0 46,0'/>
-									</svg>
-									<a href='/github' target='blank' id='github' class='sm-pic hide'><i class="fa fa-github-alt"></i></a>
-								</div>
-								<div class='sm-pic-box'>
-									<svg id='img5' class='line-drawing sm-svg'>
-										<path class='sm-path' d='M4,30a23,23 0 1,0 46,0a23,23 0 1,0 -46,0'/>
-									</svg>
-									<a href='/resume' target='blank' id='resume' class='sm-pic hide'><i class="fa fa-file-text-o"></i></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class='footer'>
-					<p class='hide'><a href='calendar'>What am I up to?</a> / <a href='party'>Play a game</a></p>
-				</div>
-			</div>
-			<div id='visual' class='box hide'>
-				<div class='slider-wrapper'>
-					<div id='slider'>
-						<div class='slide1 slide-img hide-bg'></div>
-						<div class='slide2 slide-img hide-bg'></div>
-					    <div class='slide3 slide-img hide-bg'></div>
-					</div>
-					<div id="slider-direction-nav"></div>
-	      			<div id="slider-control-nav"></div>
-	      		</div>
-			</div>
-		</div>
-		<div id='preload' style='display: none;'>
-			<img src='/assets/img/loader.gif' width='1' height='1'>
-			<img src='/assets/img/bg1.jpg' width='1' height='1'>
-			<img src='/assets/img/bg2.jpg' width='1' height='1'>
-			<img src='/assets/img/bg3.jpg' width='1' height='1'>
-			<img src='/assets/img/medium.svg' width='1' height='1'>
-			<img src='/assets/img/medium_hover.svg' width='1' height='1'>
-			<img src='/assets/img/linkedin.svg' width='1' height='1'>
-			<img src='/assets/img/linkedin_hover.svg' width='1' height='1'>
-			<img src='/assets/img/github.svg' width='1' height='1'>
-			<img src='/assets/img/github_hover.svg' width='1' height='1'>
-			<img src='/assets/img/resume.svg' width='1' height='1'>
-			<img src='/assets/img/resume_hover.svg' width='1' height='1'>
-			<img src='/assets/img/bullet.png' width='1' height='1'>
-			<img src='/assets/img/bullet_active.png' width='1' height='1'>
-			<img src='/assets/img/arrow-right.png' width='1' height='1'>
-			<img src='/assets/img/arrow-left.png' width='1' height='1'>
-		</div>
-		<script src='/assets/js/script.min.js'></script>
-	</body>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-53641188-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-53641188-1');
+    </script>
+
+    <meta charset='utf-8'>
+    <meta name="viewport" content='width=device-width, initial-scale=1'>
+    <title>Kimberli Zhong</title>
+    <meta name='description' content="Kimberli's homepage">
+    <meta name='author' content='Kimberli Zhong'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link href='/assets/vendor/font-awesome/font-awesome.min.css' rel='stylesheet'>
+    <link href='/assets/css/style.css' rel='stylesheet'>
+</head>
+
+<body>
+    <section class='section'>
+        <div class='container'>
+            <h1 class='title has-text-white'>Kimberli Zhong</h1>
+            <div class='level is-mobile'>
+                <div class='level-left'>
+                    <span class='prompt'>~</span><span class='triangle'></span>
+                    hello
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
 </html>
