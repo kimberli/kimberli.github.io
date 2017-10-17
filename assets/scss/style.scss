@@ -12,11 +12,17 @@ $body-background-color: #132132;
 $text: $white;
 $link: $cyan;
 $link-visited: $link;
-$link-hover: darken($link, 10%);
 $primary: $red;
 
 $family-primary: "Roboto Mono", monospace;
 @import "../../node_modules/bulma/bulma";
+
+a:focus,
+a:hover,
+a:active {
+    color: darken($link, 10%);
+    text-decoration: underline;
+}
 
 .hidden {
     display: none;
@@ -59,7 +65,7 @@ $family-primary: "Roboto Mono", monospace;
     width: 100%;
     color: $white;
     cursor: default;
-    outline: 0;
+    box-shadow: none;
 }
 
 .typed-cursor {
@@ -67,5 +73,5 @@ $family-primary: "Roboto Mono", monospace;
 }
 
 *:focus {
-    outline: 0;
+    outline: none;
 }
