@@ -6,6 +6,14 @@ $(document).ready(function() {
 			center: 'title',
 			right: 'agendaWeekCustom,basicWeekCustom,month'
 		},
+        buttonIcons: {
+            prev: '',
+            next: '',
+        },
+        buttonText: {
+            prev: '<',
+            next: '>',
+        },
 		allDaySlot: false,
 		defaultView: 'agendaWeekCustom',
 		minTime: "9:00:00",
@@ -21,26 +29,6 @@ $(document).ready(function() {
 			{
 				googleCalendarId: 'kimberlizhong@gmail.com',
 				className: 'calendar1',
-			},
-			{
-				googleCalendarId: 'qn6hfvvg804r0j0ghuuatmpvoc@group.calendar.google.com',
-				className: 'calendar2',
-			},
-			{
-				googleCalendarId: 've8r280thumd5h4u5jqg69c1to@group.calendar.google.com',
-				className: 'calendar1',
-			},
-			{
-				googleCalendarId: '498kovu11pdglistkeac14k61o@group.calendar.google.com',
-				className: 'calendar3',
-			},
-			{
-				googleCalendarId: 'iec62ftusfqn2jk1phv465s29o@group.calendar.google.com',
-				className: 'calendar2',
-			},
-			{
-				googleCalendarId: '4cj5594qdd3c48beoopmpfeih4@group.calendar.google.com',
-				className: 'calendar2',
 			},
 		],
 		viewRender: function(currentView){

@@ -78,3 +78,41 @@ a:active {
 *:focus {
     outline: none;
 }
+
+/* ---- Calendar ---- */
+#calendar-box {
+    padding: 50px 15px 15px 15px;
+    text-align: center;
+}
+
+#calendar {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.fc-center h2 {
+    padding: 5px 3px;
+}
+
+.fc-day-header {
+    color: $white;
+    font-weight: normal;
+}
+
+.fc-event {
+    border: 1px solid rgba(255,255,255,0);
+    background-color: $blue;
+}
+
+.fc-button {
+    box-shadow:none !important;
+    border-radius: 0 !important;
+}
+
+.fc-state-default {
+    background-image: none;
+}
+
+.calendar1 {
+    background-color: $blue;
+}
