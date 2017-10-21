@@ -7,6 +7,7 @@ $blue: #86acd7;
 $purple: #e7d5ff;
 $cyan: #a8d2eb;
 $white: #ededed;
+$gray: #ababab;
 
 $body-background-color: #132132;
 $text: $white;
@@ -115,10 +116,25 @@ a:active {
 .fc-button {
     box-shadow:none !important;
     border-radius: 0 !important;
+    border: 1px solid white;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    text-shadow: none;
+}
+
+.fc-state-active {
+    border: 1px solid $red;
+    color: $red;
 }
 
 .fc-state-default {
-    background-image: none;
+    background: none;
+}
+
+.fc-state-disabled {
+    opacity: 1;
+    border: 1px solid $gray;
+    color: $gray;
 }
 
 .calendar1 {
