@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 	$('#calendar').fullCalendar({
 		header: {
-			left: 'prev,next today',
+			left: 'prev,next',
 			center: 'title',
 			right: 'agendaWeekCustom,basicWeekCustom,month'
 		},
@@ -43,6 +43,7 @@ $(document).ready(function() {
 			if (minDate.isAfter(currentView.start) && minDate.isBefore(currentView.end)) {
 				$(".fc-prev-button").prop('disabled', true);
 				$(".fc-prev-button").addClass('fc-state-disabled');
+                $("#calendar").fullCalendar('gotoDate', minDate);
 			}
 			else {
 				$(".fc-prev-button").removeClass('fc-state-disabled');
@@ -51,6 +52,7 @@ $(document).ready(function() {
 			if (maxDate.isAfter(currentView.start) && maxDate.isBefore(currentView.end)) {
 				$(".fc-next-button").prop('disabled', true);
 				$(".fc-next-button").addClass('fc-state-disabled');
+                $("#calendar").fullCalendar('gotoDate', maxDate);
 			} else {
 				$(".fc-next-button").removeClass('fc-state-disabled');
 				$(".fc-next-button").prop('disabled', false);
