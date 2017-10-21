@@ -45,6 +45,7 @@ $(function() {
                         "<a href='/github'>github</a><br>" + 
                         "<a href='/linkedin'>linkedin</a><br>" + 
                         "<a href='/medium'>medium</a><br>" + 
+                        "<a href='/calendar'>calendar</a><br>" + 
                         "about_me.txt"
         },
         {
