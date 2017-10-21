@@ -100,8 +100,16 @@ a:active {
 }
 
 .fc-event {
-    border: 1px solid rgba(255,255,255,0);
-    background-color: $blue;
+    border: 1px solid darken($red, 15%);
+    background-color: $red;
+
+    .fc-bg {
+        background: none;
+    }
+}
+
+.fc-day-grid-event .fc-time {
+    font-weight: normal;
 }
 
 .fc-button {
@@ -114,5 +122,5 @@ a:active {
 }
 
 .calendar1 {
-    background-color: $blue;
+    background-color: $red;
 }
