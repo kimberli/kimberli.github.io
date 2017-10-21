@@ -4,7 +4,7 @@ $(document).ready(function() {
 		header: {
 			left: 'prev,next',
 			center: 'title',
-			right: 'agendaWeekCustom,basicWeekCustom,month'
+			right: 'today',
 		},
         buttonIcons: {
             prev: '',
@@ -17,6 +17,12 @@ $(document).ready(function() {
 		allDaySlot: false,
 		defaultView: 'agendaWeekCustom',
 		minTime: "9:00:00",
+        validRange: function(nowDate) {
+            return {
+                start: nowDate.startOf('month'),
+                end: nowDate.clone().add(1, 'months').endOf('month')
+            };
+        },
 		displayEventEnd: true,
 		editable: false,
 		eventLimit: 5, // allow "more" link when too many events
@@ -31,33 +37,6 @@ $(document).ready(function() {
 				className: 'calendar1',
 			},
 		],
-		viewRender: function(currentView){
-			var minDate = moment().startOf('month');
-			while (minDate.day() < 2 || minDate.day() > 4) {
-			    minDate.add(1, 'day');
-			}
-			var maxDate = moment().add(1,'month').endOf('month');
-			while (maxDate.day() < 2 || maxDate.day() > 4) {
-			    maxDate.subtract(1, 'day');
-			}
-			if (minDate.isAfter(currentView.start) && minDate.isBefore(currentView.end)) {
-				$(".fc-prev-button").prop('disabled', true);
-				$(".fc-prev-button").addClass('fc-state-disabled');
-                $("#calendar").fullCalendar('gotoDate', minDate);
-			}
-			else {
-				$(".fc-prev-button").removeClass('fc-state-disabled');
-				$(".fc-prev-button").prop('disabled', false);
-			}
-			if (maxDate.isAfter(currentView.start) && maxDate.isBefore(currentView.end)) {
-				$(".fc-next-button").prop('disabled', true);
-				$(".fc-next-button").addClass('fc-state-disabled');
-                $("#calendar").fullCalendar('gotoDate', maxDate);
-			} else {
-				$(".fc-next-button").removeClass('fc-state-disabled');
-				$(".fc-next-button").prop('disabled', false);
-			}
-		},
 		views: {
 			agendaWeekCustom: {
 	            type: 'agenda',

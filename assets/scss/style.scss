@@ -122,6 +122,15 @@ a:active {
     text-shadow: none;
 }
 
+.fc-today {
+    background: none !important;
+}
+
+.fc-disabled-day {
+    background: none !important;
+    opacity: 1 !important;
+}
+
 .fc-state-active {
     border: 1px solid $red;
     color: $red;
