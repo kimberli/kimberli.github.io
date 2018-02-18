@@ -13,7 +13,7 @@
 
 % font
 \usepackage[T1]{fontenc}
-\usepackage[rm,light,sfdefault]{roboto}
+\usepackage[medium,light,sfdefault]{roboto}
 
 % spacing adjustments
 \setlength\parindent{0pt} % no automatic indent
@@ -26,10 +26,10 @@
 % \newcommand{\rsection}[1]{\hspace{-0.3in}\rotatebox[origin=l]{90}{\marginnote{#1}}\vspace{-1em}} % section with title in margin
 \newcommand{\rsection}[1]{\vspace{1.5em}\textcolor{gray}{\Large \robotoslab #1}\vspace{0.5em}}
 \newcommand{\bd}[1]{\textbf{#1}}
-\newcommand{\bt}[1]{\textit{\textbf{#1}}} % bold title
+\newcommand{\bt}[1]{\textbf{#1}} % bold title
 \newcommand{\gap}[0]{\vspace{0.3em}} % gap between items
 \newcommand{\sgap}[0]{\vspace{0.2em}} % small gap between items
-\newcommand{\dash}[0]{ $-$ } % styled dash
+\newcommand{\sep}[0]{ // } % styled dash
 \newcommand{\tabsep}[0]{\, / \,} % table separator
 \newcommand{\arr}[0]{ $\hspace{0.2em}\rightarrow\hspace{0.2em}$ } % arrow
 \newcommand{\gray}[1]{\textcolor{gray}{#1}}
@@ -67,15 +67,24 @@ B.S. \& M.Eng. in Computer Science \& Engineering \hfill GP\hspace{-0.5px}A: 5.0
 {
 \scriptsize
 \begin{tabularx}{\textwidth}{ X X X X }
-  \class{6.869}{Computer Vision} & \class{6.172}{Performance Engineering} & \class{6.036}{Machine Learning} & \class{6.148}{Web Programming Comp.} \\
-  \class{6.828}{Operating Systems} & \class{6.170}{Software Studio} & \class{6.034}{Artificial Intelligence} & \class{14.02}{Macroeconomics} \\
-  \class{6.824}{Distributed Systems} & \class{6.046}{Algorithm Design} & \class{6.033}{Computer Systems} & \class{14.01}{Microeconomics}
+  \class{6.869}{Computer Vision} & \class{6.824}{Distributed Systems} & \class{6.046}{Algorithm Design} & \class{6.034}{Artificial Intelligence} \\
+  \class{6.858}{Computer Security} & \class{6.172}{Performance Engineering} & \class{6.036}{Machine Learning} & \class{6.033}{Computer Systems} \\
+  \class{6.828}{Operating Systems} & \class{6.170}{Software Studio} & \class{6.035}{Dynamic Language Eng.} & \class{6.148}{Web Programming Comp.}
 \end{tabularx}
 }
 
-\rsection{Work}
 
-\bt{Affirm}\dash Software Engineering Intern \hfill \gray{Summer 2017}
+\rsection{Engineering}
+
+\bt{MIT CSAIL}\sep Research Assistant \hfill \gray{2017-2018}
+
+\begin{itemize}
+\item[\e] Investigate computational understanding and generation of vector graphics
+\item[\e] Built tooling for crowdsourced data annotation \& analysis
+\end{itemize}
+
+
+\bt{Affirm}\sep Software Engineering Intern \hfill \gray{Summer 2017}
 
 \begin{itemize}
 \item[\e] Built data pipeline monitoring and visualization tooling on Risk Engineering team using Python
@@ -84,7 +93,7 @@ B.S. \& M.Eng. in Computer Science \& Engineering \hfill GP\hspace{-0.5px}A: 5.0
 
 \gap
 
-\bt{Jane Street Capital}\dash Software Engineering Intern \hfill \gray{January 2017}
+\bt{Jane Street Capital}\sep Software Engineering Intern \hfill \gray{January 2017}
 
 \begin{itemize}
 \item[\e] Contributed to financial market trading infrastructure using OCaml
@@ -92,7 +101,7 @@ B.S. \& M.Eng. in Computer Science \& Engineering \hfill GP\hspace{-0.5px}A: 5.0
 
 \gap
 
-\bt{Airbnb}\dash Software Engineering Intern \hfill \gray{Summer 2016}
+\bt{Airbnb}\sep Software Engineering Intern \hfill \gray{Summer 2016}
 
 \begin{itemize}
 \item[\e] Worked on government ID image processing on the Trust team using Tesseract, Ruby on Rails, and OpenCV
@@ -101,71 +110,48 @@ B.S. \& M.Eng. in Computer Science \& Engineering \hfill GP\hspace{-0.5px}A: 5.0
 
 \gap
 
-\bt{Google}\dash Engineering Practicum Intern \hfill \gray{Summer 2015}
+\bt{Google}\sep Engineering Practicum Intern \hfill \gray{Summer 2015}
 
 \begin{itemize}
 \item[\e] Created an Android app for benchmarking Android libraries using Java and C++
 \item[\e] Built a test system that runs automatically and tracks historical data using Python, Flask, Angular
 \end{itemize}
 
+
 \rsection{Leadership}
 
-\bt{MIT 6.031 Elements of Software Construction}\dash Teaching Assistant \hfill \gray{Spring \& Fall 2017}
-
-\begin{itemize}
-\item[\e] Help teach, grade, and run intermediate CS course in Java software engineering
-\end{itemize}
+\bt{Greylock X}\sep Fellow \hfill \gray{Summer 2017}
 
 \gap
 
-\bt{KPCB Fellowship}\dash Engineering Fellow \hfill \gray{Summer 2016}
-
-\begin{itemize}
-\item[\e] Selected for summer fellowship with KPCB, one of the largest venture capital firms in Silicon Valley
-\end{itemize}
+\bt{KPCB Fellowship}\sep Engineering Fellow \hfill \gray{Summer 2016}
 
 \gap
 
-\bt{HackMIT \& Blueprint}\dash Co-director \& Organizer \hfill \gray{2014-2016}
-
-\begin{itemize}
-\item[\e] Led organizing team of \textasciitilde 25 students for HackMIT, a 1000-person collegiate hackathon
-\item[\e] Organized Blueprint, a learnathon and hackathon for local high school students
-\end{itemize}
+\bt{HackMIT \& Blueprint}\sep Co-director \hfill \gray{2014-2016}
 
 \gap
 
-\bt{Rough Draft Ventures}\dash Student Partner \hfill \gray{2015-2016}
+\bt{Rough Draft Ventures}\sep Student Partner \hfill \gray{2015-2016}
 
-\begin{itemize}
-\item[\e] Met with Boston-area student startups \& contributed to investment decisions (up to \$25k funding)
-\end{itemize}
-
-\gap
-
-\bt{MIT 6.148 Web Programming Competition}\dash Teaching Staff \hfill \gray{2015-2016}
-
-\begin{itemize}
-\item[\e] Helped teach student-run, month-long class \& competition where students learn to use web technologies
-\end{itemize}
 
 \rsection{Awards}
 
-\bt{MIT 6.170 Software Studio} \hfill \gray{Fall 2015}
-
-\begin{itemize}
-\item[\e] Received top 10 overall grade in class about fundamentals of software construction using web technologies
-\item[\e] Won Best Feature Set for final class project; built a real-time group note-taking app with Node.js, Angular
-\end{itemize}
+\bt{MIT 6.170 Software Studio} \sep Top 10 Overall Grade, Best Feature Set \hfill \gray{Fall 2015}
 
 \gap
 
-\bt{MIT 6.470 Web Programming Competition} \hfill \gray{January 2015}
+\bt{MIT 6.148 Web Programming Competition} \sep 4th Place, Most Responsive Design \hfill \gray{January 2015}
 
-\begin{itemize}
-\item[\e] Worked with a team of two other freshmen on an app for academic competitions using Node.js
-\item[\e] Won Most Responsive Design \& 4th Place in the Main Division
-\end{itemize}
+
+\rsection{Teaching}
+
+\bt{MIT 6.031 Elements of Software Construction} \hfill \gray{Spring 2017 \& Fall 2017}
+
+\gap
+
+\bt{MIT 6.148 Web Programming Competition} \hfill \gray{January 2016}
+
 
 \rsection{Skills}
 
