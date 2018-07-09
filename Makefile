@@ -4,7 +4,7 @@ TEX := latexmk
 
 TEXFILE := resume.tex
 
-SASSFLAGS := --scss --unix-newlines --style compressed
+SASSFLAGS := --style compressed
 RMFLAGS := -rf
 TEXMAKEFLAGS := -quiet -pdf
 TEXCLEANFLAGS := -C
