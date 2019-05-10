@@ -32,7 +32,7 @@ $(function() {
     var data = [
         {
             "command": "whoami",
-            "response": "Hi! I'm Kimberli, a senior studying Computer Science and Engineering at MIT."
+            "response": "Hi! I'm Kimberli! ~(˘▾˘~)"
         },
         {
             "command": "cd info",
@@ -51,7 +51,9 @@ $(function() {
         {
             "command": "cat about_me.txt",
             "prompt": "~/info",
-            "response": "My hobbies include Snapchatting low-quality food pics, playing with my puppy Java, and enjoying nature (in light doses). I'm always taking reading suggestions, and I'll offer you mine: I love reading newsletters like The New York Times' Interpreter and Matt Levine's Money Stuff. Hit me up via your medium of choice--I don't bite!"
+            "response": "I recently graduated from MIT, where I got my B.S. and M.Eng. in computer science. " +
+            "These days, I'm working as a software engineer at <a href='https://applied.co' target='_blank'>Applied Intuition</a>, where I get to build infrastructure to power autonomous vehicle development. " +
+            "Feel free to reach out via your medium of choice--I promise I'm friendly!"
         },
     ];
     
