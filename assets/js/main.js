@@ -40,12 +40,13 @@ $(function() {
         {
             "command": "ls -1",
             "prompt": "~/info",
-            "response": "<a href='mailto:kimberlizhong+site@gmail.com'>email</a><br>" + 
-                        "<a href='/resume'>resume</a><br>" + 
-                        "<a href='/github'>github</a><br>" + 
-                        "<a href='/linkedin'>linkedin</a><br>" + 
-                        "<a href='/medium'>medium</a><br>" + 
-                        "<a href='/calendar'>calendar</a><br>" + 
+            "response": "<a href='mailto:kimberlizhong+site@gmail.com'>email</a><br>" +
+                        "<a href='/resume'>resume</a><br>" +
+                        "<a href='/github'>github</a><br>" +
+                        "<a href='/linkedin'>linkedin</a><br>" +
+                        "<a href='/medium'>medium</a><br>" +
+                        "<a href='/calendar'>calendar</a><br>" +
+                        "<a href='/books'>books</a><br>" +
                         "about_me.txt"
         },
         {
