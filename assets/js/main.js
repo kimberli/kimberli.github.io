@@ -86,7 +86,8 @@ $(function() {
         level.append($("<span class='command' id='" + tagName + "'></span>"));
     }
     
-    function showFinalPrompt() {
+    function showFinalPrompt(index) {
+        addPrompt(index);
         var response = $("<div class='response'></div>");
         $(".code").append(response);
         var field = $("<input class='input' id='user-prompt'></input>");
@@ -103,12 +104,14 @@ $(function() {
             } else if (matchCommands.indexOf(command.toLowerCase()) > -1) {
                 response.html(matchResponse);
                 field.prop("disabled", true);
+                showFinalPrompt(index + 1);
             } else if (field.val()) {
                 response.html(failResponse + command);
                 field.prop("disabled", true);
+                showFinalPrompt(index + 1);
             }
         });
-        $("#command-" + data.length).append(form);
+        $("#command-" + index).append(form);
         field.focus();
     }
     
@@ -117,10 +120,10 @@ $(function() {
             $(".typed-cursor").hide();
             setTimeout(function() {
                 showResponse(index);
-                addPrompt(index + 1);
                 if (index + 1 === data.length) {
-                    showFinalPrompt();
+                    showFinalPrompt(index + 1);
                 } else {
+                    addPrompt(index + 1);
                     setTimeout(function() {
                         typeCommand(index + 1);
                     }, 250);
