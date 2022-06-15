@@ -1,6 +1,5 @@
 .DS_Store
 .sass-cache
-**/*.css
 *.css.map
 *.aux
 *.fdb_latexmk
