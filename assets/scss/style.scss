@@ -9,9 +9,9 @@ $cyan: #a8d2eb;
 $white: #ededed;
 $gray: #ababab;
 
-$body-background-color: #132132;
-$text: $white;
-$link: $cyan;
+$body-background-color: $white;
+$text: 222;
+$link: $blue;
 $link-visited: $link;
 $primary: $red;
 
@@ -29,123 +29,6 @@ a:active {
     display: none;
 }
 
-.level-left {
-    width: 100%; // idk how to frontend sorry
-}
-.command {
-    width: 100%;
-}
-
-.level:not(:last-child) {
-    margin-bottom: 0;
-}
-
-.level{
-    margin-top: 1rem;
-}
-
-.prompt {
-    background-color: $red;
-    color: #870041;
-    padding: 0 0.5rem;
-}
-
-.triangle {
-    width: 0;
-    height: 0;
-    border-top: $size-small solid transparent;
-    border-bottom: $size-small solid transparent;
-    border-left: $size-small solid $red;
-    padding-right: 0.5rem;
-}
-
-#user-prompt {
-    background: transparent;
-    border: none;
-    padding: 0;
-    width: 100%;
-    color: $white;
-    box-shadow: none;
-}
-
-#user-prompt[disabled] {
-    cursor: default;
-}
-
-.typed-cursor {
-    display: none;
-}
-
 *:focus {
     outline: none;
-}
-
-/* ---- Calendar ---- */
-#calendar-box {
-    padding: 50px 15px 15px 15px;
-    text-align: center;
-}
-
-#calendar {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.fc-center h2 {
-    padding: 5px 3px;
-}
-
-.fc-day-header {
-    color: $white;
-    font-weight: normal;
-}
-
-.fc-event {
-    border: 1px solid darken($red, 15%);
-    background-color: $red;
-
-    .fc-bg {
-        background: none;
-    }
-}
-
-.fc-day-grid-event .fc-time {
-    font-weight: normal;
-}
-
-.fc-button {
-    box-shadow:none !important;
-    border-radius: 0 !important;
-    border: 1px solid white;
-    background-color: rgba(0,0,0,0);
-    color: white;
-    text-shadow: none;
-}
-
-.fc-today {
-    background: none !important;
-}
-
-.fc-disabled-day {
-    background: none !important;
-    opacity: 1 !important;
-}
-
-.fc-state-active {
-    border: 1px solid $red;
-    color: $red;
-}
-
-.fc-state-default {
-    background: none;
-}
-
-.fc-state-disabled {
-    opacity: 1;
-    border: 1px solid $gray;
-    color: $gray;
-}
-
-.calendar1 {
-    background-color: $red;
 }
