@@ -1,19 +1,15 @@
 @import '../../node_modules/bulma/sass/utilities/_all.sass';
 
-$red: #fd8489;
-$green: #a9dd9d;
-$yellow: #fedf81;
-$blue: #86acd7;
-$purple: #e7d5ff;
-$cyan: #a8d2eb;
-$white: #ededed;
-$gray: #ababab;
+$primary: #E29686;
+$success: #2691A5;
+$info: #FAAA8F;
+$warning: #F9C6B3;
+$dark: #0F6983;
 
-$body-background-color: $white;
-$text: 222;
-$link: $blue;
+$body-background-color: #fdf1ec;
+$text: $dark;
+$link: $success;
 $link-visited: $link;
-$primary: $red;
 
 $family-primary: "Roboto Mono", monospace;
 @import "../../node_modules/bulma/bulma";
@@ -31,4 +27,15 @@ a:active {
 
 *:focus {
     outline: none;
+}
+
+.hero {
+  background-image: url("/assets/img/bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.content {
+  background-color: $body-background-color;
 }
