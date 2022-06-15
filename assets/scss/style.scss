@@ -12,7 +12,7 @@ $text: $dark;
 $link: $success;
 $link-visited: $link;
 
-$family-primary: "Roboto Mono", monospace;
+$family-primary: "Montserrat", monospace;
 @import "../../node_modules/bulma/bulma";
 
 a:focus,
@@ -35,6 +35,10 @@ a:active {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.content-container {
+  border: 1px solid $content-background-color;
 }
 
 .content {
