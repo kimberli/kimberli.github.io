@@ -6,7 +6,8 @@ $info: #FAAA8F;
 $warning: #F9C6B3;
 $dark: #0F6983;
 
-$body-background-color: #fdf1ec;
+$body-background-color: $warning;
+$content-background-color: #FDF1EC;
 $text: $dark;
 $link: $success;
 $link-visited: $link;
@@ -37,5 +38,5 @@ a:active {
 }
 
 .content {
-  background-color: $body-background-color;
+  background-color: $content-background-color;
 }
