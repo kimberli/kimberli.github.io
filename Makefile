@@ -1,4 +1,5 @@
-SASS := sass
+SASS := node_modules/sass/sass.js
+PYTHON := python
 RM := rm
 TEX := latexmk
 
@@ -26,6 +27,9 @@ all: $(ALL_OBJS)
 
 watch:
 	@$(SASS) --watch $(SASSFLAGS) $(SCSS_DIR):$(CSS_OUT)
+
+server:
+	@$(PYTHON) -m SimpleHTTPServer
 
 clean:
 	$(RM) $(RMFLAGS) $(ALL_OBJS) $(CSS_MAPS) .sass-cache
