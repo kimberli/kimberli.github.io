@@ -29,7 +29,7 @@ watch:
 	@$(SASS) --watch $(SASSFLAGS) $(SCSS_DIR):$(CSS_OUT)
 
 server:
-	@$(PYTHON) -m SimpleHTTPServer
+	@$(PYTHON) -m http.server
 
 clean:
 	$(RM) $(RMFLAGS) $(ALL_OBJS) $(CSS_MAPS) .sass-cache
